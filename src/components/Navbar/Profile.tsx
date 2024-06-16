@@ -76,7 +76,8 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
             className={`absolute inset-0 z-20 ${
             isProfileOpen ? 'block bg-black opacity-50' : 'hidden'
             }`}
-            onClick={closeProfile}></div>
+            onClick={closeProfile}>
+        </div>
 
         <div className={isProfileOpen ? 'absolute right-0 w-full sm:w-[517px] bg-[#ECECEC] px-[20px] py-[40px] sm:px-[30px] space-y-[40px] z-20 sm:rounded-[12px]' : 'hidden'}>
             <div className='flex flex-col items-center bg-[#FFFFFF] w-full h-[184px] rounded-[8px] py-[12px] gap-[8px]'>
@@ -133,7 +134,7 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
 
             <div className='bg-[#FFFFFF] py-[12px] px-[24px] rounded-[8px] space-y-[40px]'>
             <h2 className='text-[30px] font-[500] leading-[32px]'>Recent test result</h2>
-                {bookData.books[0].units[0].practice_tests.slice(0,2).map((test, index) => (
+                {bookData.books[0].units[0].practice_tests.slice(0,2).map((test:any, index:number) => (
                     <SkillTestBoxList key={index} testData={test} />
                 ))}
             </div>
@@ -147,8 +148,8 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
             </div>
             <div className='overflow-x-auto hide-scrollbar'>
                 <div className='w-[633px] grid grid-cols-3 gap-[24px]'>
-                {bookData.books.slice(0,3).map((book, index) => (
-                    <div className='flex justify-between space-x-[16px]'>
+                {bookData.books.slice(0,3).map((book, index:number) => (
+                    <div key={index} className='flex justify-between space-x-[16px]'>
                     <figure className='h-[70px] w-[70px] rounded-[8px]'>
                         <Image
                         alt={"book image"}

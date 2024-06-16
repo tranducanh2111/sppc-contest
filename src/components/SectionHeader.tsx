@@ -37,18 +37,20 @@ type WithoutFilterBarProps = BaseHeadingSectionProps & {
 
 type HeadingSectionProps = WithFilterBarProps | WithoutFilterBarProps;
 
+// Type guard to check if the props are WithFilterBarProps
+function isWithFilterBarProps(props: HeadingSectionProps): props is WithFilterBarProps {
+    return props.showFilterBar;
+}
+
 // Define the HeadingSection component
-const HeadingSection = ({
-    headingText,
-    paragraphText,
-    viewMoreLink,
-    showFilterBar,
-    categories,
-    selectedCategoryIndex,
-    setSelectedCategoryIndex,
-    setFilteredData,
-    inputData,
-}: HeadingSectionProps) => {
+const HeadingSection: React.FC<HeadingSectionProps> = (props) => {
+    const {
+        headingText,
+        paragraphText,
+        viewMoreLink,
+        showFilterBar,
+    } = props;
+
     return (
         <div className="mb-12 w-full flex flex-col sm:flex-row justify-between items-center space-y-[12px]">
             <div className='w-full max-w-[532px]'>
@@ -57,13 +59,13 @@ const HeadingSection = ({
                     {paragraphText}
                 </p>
                 {/* Conditionally render FilterBar */}
-                {showFilterBar && (
+                {showFilterBar && isWithFilterBarProps(props) && (
                     <Tab
-                        categories={categories}
-                        inputData={inputData}
-                        selectedCategoryIndex={selectedCategoryIndex}
-                        setSelectedCategoryIndex={setSelectedCategoryIndex}
-                        setFilteredData={setFilteredData}
+                        categories={props.categories}
+                        inputData={props.inputData}
+                        selectedCategoryIndex={props.selectedCategoryIndex}
+                        setSelectedCategoryIndex={props.setSelectedCategoryIndex}
+                        setFilteredData={props.setFilteredData}
                     />
                 )}
             </div>
