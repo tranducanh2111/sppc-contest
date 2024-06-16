@@ -36,7 +36,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
               src={LocationIcon}
               alt="Location Icon"
             />
-            <p className='text-body text-grey'>Sydney, NSW, Australia</p>
+            <p className='text-body font-bold'>Sydney, NSW, Australia</p>
           </div>
         </div>
         {/* Line */}
@@ -49,7 +49,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
               src={CalendarIcon}
               alt="Location Icon"
             />
-            <p className='text-body text-grey'>17 July 2024</p>
+            <p className='text-body font-bold'>17 July 2024</p>
           </div>
         </div>
         {/* Button */}

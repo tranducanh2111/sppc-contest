@@ -52,10 +52,10 @@ const HeadingSection: React.FC<HeadingSectionProps> = (props) => {
     } = props;
 
     return (
-        <div className="mb-12 w-full flex flex-col sm:flex-row justify-between items-center space-y-[12px]">
-            <div className='w-full max-w-[532px]'>
+        <div className="mb-12 w-full flex flex-col flex-wrap sm:flex-row justify-between items-center space-y-[12px]">
+            <div className='w-full max-w-[662px] min-w-fit flex-1'>
                 <h2 className="text-h2 text-primary mb-[4px] max-w-[418px]">{headingText}</h2>
-                <p className="text-body text-grey line-[22px] max-w-[418px]">
+                <p className="text-body text-grey line-[22px] max-w-[662px]">
                     {paragraphText}
                 </p>
                 {/* Conditionally render FilterBar */}
@@ -70,7 +70,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = (props) => {
                 )}
             </div>
             {/* View More button */}
-            <a href={viewMoreLink} className="flex items-center max-w-content h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto">
+            <a href={viewMoreLink} className="flex items-center max-w-content min-w-fit h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto">
                 <Button className='font-medium' icon={ThinArrow} title='View more'/>
             </a>
         </div>
