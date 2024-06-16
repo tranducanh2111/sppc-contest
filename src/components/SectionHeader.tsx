@@ -54,7 +54,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = (props) => {
     return (
         <div className="mb-12 w-full flex flex-col sm:flex-row justify-between items-center space-y-[12px]">
             <div className='w-full max-w-[532px]'>
-                <h2 className="text-h2 mb-[4px] max-w-[418px]">{headingText}</h2>
+                <h2 className="text-h2 text-primary mb-[4px] max-w-[418px]">{headingText}</h2>
                 <p className="text-body text-grey line-[22px] max-w-[418px]">
                     {paragraphText}
                 </p>

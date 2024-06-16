@@ -63,7 +63,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </Layout>
       <div className={`${isProfileOpen && 'lg:block hidden'}`}>
-      {pathName?.split('/')[1] === 'test' ? <TestFooter /> : <Footer/>}
+        {pathName?.split('/')[1] === 'test' ? <TestFooter /> : <Footer/>}
       </div>
     </Auth0Provider>
   );

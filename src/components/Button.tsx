@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       aria-label={title}
     >
       {icon ? (
-          <span className='flex items-center justify-center'>
+          <span className='flex items-center justify-center gap-x-[0.5rem]'>
             <Image
               src={icon}
               alt="Logo"

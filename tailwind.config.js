@@ -38,7 +38,7 @@ module.exports = withMT({
           '48px',
           {
             lineHeight: '56px',
-            fontWeight: '500',
+            fontWeight: '600',
           },
         ],
         h3: [
@@ -95,6 +95,10 @@ module.exports = withMT({
       borderRadius: {
         'inner-border-radius': 'calc(10px - 8px)',
       },
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'homepage-contest-stat': 'minmax(900px, 1fr) auto',
+      }
     },
   },
   plugins: [],

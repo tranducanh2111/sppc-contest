@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Search from './Search'
 import SideLogo from 'public/Sidebar.svg'
 import RectangleImage from 'public/book.svg'
 import HomeIcon from 'public/home-icon.svg'
@@ -28,12 +29,12 @@ const SidebarModal = ({
       {/* Extended sidebar */}
       <div
         className={`sm:relative fixed inset-y-0 right-0 sm:left-0 top-21 z-50 sm:z-0 bg-white mr-0 ${
-          isOpen ? 'w-[230px]' : 'w-[70px] invisible sm:visible duration-0'
+          isOpen ? 'w-[260px]' : 'w-[70px] invisible sm:visible duration-0'
         } duration-100`}>
         <div
           className={`px-4 justify-between flex items-center w-full mb-[35px] ${
             !isOpen && 'hidden'
-          }`}>
+          }`}>   
           <div className="hidden sm:block">
             <h2 className="text-xl font-semibold ">Dashboard</h2>
           </div>
@@ -43,7 +44,8 @@ const SidebarModal = ({
             <Image src={SideLogo} alt="Logo" width={20} height={20} />
           </button>
         </div>
-        <div className={`${!isOpen && 'hidden'} pl-2 pt-6 sm:p-0`}>
+        <div className={`${!isOpen && 'hidden'} pl-2 pr-2 pt-6 md:p-0`}>
+          <Search />
           <Menu />
         </div>
       </div>

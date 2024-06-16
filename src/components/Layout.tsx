@@ -19,7 +19,7 @@ const Layout: React.FC<{
     <>
       <div className="flex justify-start overflow-x-hidden">
         {/* Sidebar */}
-        <div className="sticky">
+        <div>
           <SidebarModal
             isOpen={isOpen}
             openSidebar={openSidebar}
