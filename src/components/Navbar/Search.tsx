@@ -50,7 +50,7 @@ const Search: React.FC = () => {
       </div>
       <input
         className="w-[100%] h-[34px] border-0 outline-none"
-        placeholder="Search Input"
+        placeholder="What are you looking for?"
         value={search}
         onChange={e => setSearch(e.target.value)}
         onKeyUp={handleSearchSubmit}

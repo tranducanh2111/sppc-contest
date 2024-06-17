@@ -52,7 +52,7 @@ module.exports = withMT({
           '20px',
           {
             lineHeight: '28px',
-            fontWeight: '500',
+            fontWeight: '600',
           },
         ],
         'sub-heading': [
@@ -97,7 +97,7 @@ module.exports = withMT({
       },
       gridTemplateColumns: {
         // Complex site-specific column configuration
-        'homepage-contest-stat': 'minmax(900px, 1fr) auto',
+        'homepage-contest-stat': 'max(40%, 300px) auto',
       }
     },
   },
