@@ -25,7 +25,7 @@ const Navbar: React.FC<{openSidebar: () => void, toggleProfile : () => void}> = 
             <div className="flex items-center">
               <Link href="/">
                 <div className="flex-shrink-0">
-                  <Image src={Logo} alt="Logo" width={95} height={95} />
+                  <Image src={Logo} alt="Logo" width={128} height={128} />
                 </div>
               </Link>
             </div>

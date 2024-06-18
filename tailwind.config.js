@@ -90,7 +90,7 @@ module.exports = withMT({
         "light-grey": "#687076",
         "sub-head": "#2e2e2e80",
         subtitle: "#00000073",
-        grey: "rgba(0, 0, 0, 0.45)",
+        grey: "rgba(0, 0, 0, 0.55)",
       },
       borderRadius: {
         'inner-border-radius': 'calc(10px - 8px)',
