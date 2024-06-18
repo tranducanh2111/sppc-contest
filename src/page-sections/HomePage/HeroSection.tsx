@@ -16,7 +16,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
         {/* Main Content Container */}
         <div className='flex flex-col gap-[1rem]'>
             <h1 className='lg:text-h1 text-6xl font-bold uppercase'>Let's go! <span className='text-primary'>SPPC</span> is waiting for you</h1>
-            <p className='lg:text-sub-heading text-body'>Join the coding frenzy and showcase your skills at SPPC - where innovation meets competition!</p>
+            <p className='lg:text-sub-heading text-grey text-body'>Join the coding frenzy and showcase your skills at SPPC - where innovation meets competition!</p>
         </div>
         <div className="md:block hidden">
             <Image

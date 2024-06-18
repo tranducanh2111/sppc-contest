@@ -45,7 +45,9 @@ const SidebarModal = ({
           </button>
         </div>
         <div className={`${!isOpen && 'hidden'} pl-2 pr-2 pt-6 md:p-0`}>
-          <Search />
+          <div className='md:hidden block'>
+            <Search />
+          </div>
           <Menu />
         </div>
       </div>

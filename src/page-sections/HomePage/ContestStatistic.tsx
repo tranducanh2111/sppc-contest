@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from '@/components/Button'
 import HeadingSection from '@/components/SectionHeader'
 import StudentIcon from '../../../public/student.svg'
 import UniversityIcon from '../../../public/university.svg'
@@ -19,7 +18,7 @@ const ContestStatistic = () => {
                 showFilterBar={false}
             />
             {/* Body */}
-            <section className='lg:grid lg:grid-cols-homepage-contest-stat gap-[2rem]'>
+            <section className='flex flex-col lg:grid lg:grid-cols-homepage-contest-stat gap-[2rem]'>
                 <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-1 gap-y-[1.25rem]'>
                     <h3 className='text-h3 xs:col-span-2 lg:col-span-1'>Ready to test your coding skills? Join SPPC for thrilling challenges, valuable learning opportunities, and win prestigious honors!</h3>
                     {/* Stat 1 */}
@@ -72,7 +71,6 @@ const ContestStatistic = () => {
                         src={ContestStatIllustration}
                         alt="Location Icon"
                     />
-                
                 </div>
             </section>
         </section>
