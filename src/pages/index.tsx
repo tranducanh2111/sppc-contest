@@ -5,6 +5,7 @@ import HeroIllustraion from '../../public/hero-image.svg'
 import HeroSection from '@/page-sections/HomePage/HeroSection'
 import ContestStatistic from '@/page-sections/HomePage/ContestStatistic'
 import SponsorList from '@/page-sections/HomePage/SponsorList'
+import ContestOverview from '@/page-sections/HomePage/ContestOverview'
 // import ContactSection from '@/page-sections/HomePage/ContactSection'
 // import TestimonialsSection from '@/page-sections/HomePage/TestimonialsSection'
 // import WorkshopSection from '@/page-sections/HomePage/WorkshopSection'
@@ -26,14 +27,9 @@ const Home: React.FC = () => {
         <div className="max-w-[1170px] flex flex-col mx-auto mt-[2rem] mb-10 gap-[80px] px-5">
           <HeroSection imageUrl={HeroIllustraion}/>
           <ContestStatistic/>
-          {/* <CoursesSection collectionList={collectionList}/>
-          <WorkshopSection />
-          <BlocksSection /> */}
         </div>
         <SponsorList />
-        {/* <TestimonialsSection />
-        <ArticlesSection/>
-        <ContactSection/> */}
+        <ContestOverview />
       </div>
     </Fragment>
   )

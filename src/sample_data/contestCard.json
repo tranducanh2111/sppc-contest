@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Location",
+        "descriptions": "Step into our modern convention center, the perfect venue for thrilling competitions!",
+        "testURL": "",
+        "buttonText": "Explore"
+    },
+    {
+        "name": "Timeline",
+        "descriptions": "Embark on an exhilarating journey through our contest timeline, filled with exciting challenges!",
+        "testURL": "",
+        "buttonText": "Explore"
+    },
+    {
+        "name": "Cost",
+        "descriptions": "Experience our contest with budget-friendly fees, and the opportunity to win fantastic rewards!",
+        "testURL": "",
+        "buttonText": "Explore"
+    }
+]

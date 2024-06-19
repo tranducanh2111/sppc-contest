@@ -20,6 +20,7 @@ import SalesforceLogo from '../../../public/salesforce.svg';
 import AdobeLogo from '../../../public/adobe.svg';
 import CapgeminiLogo from '../../../public/capgemini.svg';
 import EnvatoLogo from '../../../public/envato.svg';
+import HeadingSection from '@/components/SectionHeader';
 import ThinArrow from '../../../public/thin-arrow.svg';
 
 const SponsorList = () => {
