@@ -3,7 +3,7 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import { AppProps } from "next/app";
 import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer/Footer";
-import TestFooter from "@/components/TestFooter";
+import TestFooter from "@/components/Footer/TestFooter";
 import Navbar from "@/components/Navbar/Navbar";
 import Layout from "@/components/Layout";
 import "../styles/globals.css";
