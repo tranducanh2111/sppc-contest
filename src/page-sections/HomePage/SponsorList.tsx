@@ -43,14 +43,14 @@ const SponsorList = () => {
     ];
 
     return (
-        <section className="max-w-screen overflow-hidden flex flex-col flex-wrap items-center gap-[2rem] md:gap-[3rem] mt-[80px]">
+        <section className="max-w-screen overflow-hidden flex flex-col flex-wrap items-center gap-[2rem] md:gap-[3rem]">
             <div className='flex flex-col items-center flex-wrap px-5 gap-y-[0.75rem] md:gap-y-[1rem] max-w-[650px] mx-auto'>
                 <h3 className='text-h3 font-semibold text-center'>Join our esteemed sponsors in empowering aspiring programmers and exposure to a diverse audience</h3>
                 <Button title='Be our sponsors' icon={ThinArrow} className='text-primary'/>
             </div>
             <Swiper
                 modules={[Pagination, Autoplay]}
-                className="justify-start items-start gap-6 inline-flex h-[180px] mask-gradient"
+                className="justify-start items-start gap-6 inline-flex h-[128px] mask-gradient"
                 spaceBetween={12}
                 slidesPerView="auto"
                 loop={true}
