@@ -59,6 +59,11 @@
   background: #555;
 }
 
+.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
 .custom-pagination-bullet {
     background-color: blue !important;
 }

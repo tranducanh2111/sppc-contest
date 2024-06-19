@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import { StaticImageData } from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import LocationIcon from '../../../public/location.svg'
 import CalendarIcon from '../../../public/calendar.svg'
 import Button from '@/components/Button'

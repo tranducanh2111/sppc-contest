@@ -38,14 +38,14 @@ module.exports = withMT({
           '48px',
           {
             lineHeight: '56px',
-            fontWeight: '600',
+            fontWeight: '700',
           },
         ],
         h3: [
           '24px',
           {
             lineHeight: '28px',
-            fontWeight: '500',
+            fontWeight: '600',
           },
         ],
         h4: [
