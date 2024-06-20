@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import Image, {StaticImageData} from 'next/image';
 import Button from '@/components/Button';
 import PrimaryCard from '@/components/PrimaryCard';
@@ -18,59 +20,10 @@ const imageMap: Record<CardName, StaticImageData> = {
 };
 
 const ContestOverview = () => {
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const scrollContainer = scrollContainerRef.current;
-
-        if (!scrollContainer) return;
-
-        let isDown = false;
-        let startX = 0;
-        let scrollLeft = 0;
-
-        const mouseDownHandler = (e : MouseEvent) => {
-            isDown = true;
-            scrollContainer.classList.add('active');
-            startX = e.pageX - scrollContainer.offsetLeft;
-            scrollLeft = scrollContainer.scrollLeft;
-        };
-
-        const mouseLeaveHandler = () => {
-            isDown = false;
-            scrollContainer.classList.remove('active');
-        };
-
-        const mouseUpHandler = () => {
-            isDown = false;
-            scrollContainer.classList.remove('active');
-        };
-
-        const mouseMoveHandler = (e : MouseEvent) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - scrollContainer.offsetLeft;
-            const walk = (x - startX) * 2;
-            scrollContainer.scrollLeft = scrollLeft - walk;
-        };
-
-        scrollContainer.addEventListener('mousedown', mouseDownHandler);
-        scrollContainer.addEventListener('mouseleave', mouseLeaveHandler);
-        scrollContainer.addEventListener('mouseup', mouseUpHandler);
-        scrollContainer.addEventListener('mousemove', mouseMoveHandler);
-
-        return () => {
-            scrollContainer.removeEventListener('mousedown', mouseDownHandler);
-            scrollContainer.removeEventListener('mouseleave', mouseLeaveHandler);
-            scrollContainer.removeEventListener('mouseup', mouseUpHandler);
-            scrollContainer.removeEventListener('mousemove', mouseMoveHandler);
-        };
-    }, []);
-
     return (
-        <section className='max-w-[1170px] px-5 mx-auto mt-[80px] flex flex-col gap-[3rem]'>
+        <section className='max-w-[1170px] mx-auto mt-[80px] flex flex-col gap-[3rem]'>
             {/* Header */}
-            <div className='block lg:grid lg:grid-cols-3 gap-x-[3rem]'>
+            <div className='block lg:grid lg:grid-cols-3 gap-x-[3rem] px-5'>
                 {/* Header Heading */}
                 <div className='col-span-1 mb-[0.75rem] lg:mb-0'>
                     <p className='text-body text-primary font-semibold'>With SPPC</p>
@@ -94,19 +47,30 @@ const ContestOverview = () => {
                 </div>
             </div>
             {/* Card Container */}
-            <div className="max-w-[1170px] w-full h-[400px] md:h-[420px] overflow-x-auto hide-scrollbar" ref={scrollContainerRef}>
-                <div className="flex w-[200vw] md:w-full justify-between gap-x-[3rem] px-[0.5rem]">
+            <div className="max-w-[1170px] w-full h-[400px] md:h-[420px] overflow-x-auto hide-scrollbar md:px-5">
+                <Swiper
+                    className="md:w-full"
+                    slidesPerView="auto"
+                    loop={true}
+                    breakpoints={{
+                        1024: { centeredSlides: false, initialSlide: 1, spaceBetween: 64},
+                        768: { centeredSlides: false, initialSlide: 1, spaceBetween: 24},
+                        0: { centeredSlides: true, initialSlide: 2, spaceBetween: 16 },
+                    }}
+                >
                     {CardData.map((card, index) => (
-                        <PrimaryCard
-                            key={index}
-                            name={card.name}
-                            descriptions={card.descriptions}
-                            testURL={card.testURL}
-                            buttonText={card.buttonText}
-                            imageURL={imageMap[card.name as CardName]}
-                        />
+                        <SwiperSlide key={index} className="aspect-[341/424] justify-center items-start" style={{ maxWidth: '330px', width: '80vw', display: "flex"}}>
+                            <PrimaryCard
+                                key={index}
+                                name={card.name}
+                                descriptions={card.descriptions}
+                                testURL={card.testURL}
+                                buttonText={card.buttonText}
+                                imageURL={imageMap[card.name as CardName]}
+                            />
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
         
