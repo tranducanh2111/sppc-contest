@@ -4,18 +4,21 @@ import { Autoplay } from 'swiper/modules';
 import {StaticImageData} from 'next/image';
 import PrimaryCard from '@/components/PrimaryCard';
 import PastChampData from '@/sample_data/PastChamp.json';
-import TimelineImage from '../../../public/homepage-timeline.png';
-import CostImage from '../../../public/homepage-cost.png';
+import Champ1Image from '../../../public/champ1.jpg';
+import Champ2Image from '../../../public/champ2.jpg';
+import Champ3Image from '../../../public/champ3.jpg';
+import Champ4Image from '../../../public/champ4.jpg';
+import Champ5Image from '../../../public/champ5.jpg';
 
 // Define the type for the card names
 type CardName = '2023' | '2022' | '2021' | '2020' | '2019';
 
 const imageMap: Record<CardName, StaticImageData> = {
-    2023: TimelineImage,
-    2022: CostImage,
-    2021: CostImage,
-    2020: CostImage,
-    2019: CostImage
+    2023: Champ1Image,
+    2022: Champ2Image,
+    2021: Champ3Image,
+    2020: Champ5Image,
+    2019: Champ4Image
 };
 
 const PastChampion = () => {
