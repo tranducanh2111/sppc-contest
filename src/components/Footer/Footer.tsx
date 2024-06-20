@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="fast__link sm:mt-[20px] sm:mt-0">
-          <h4 className="text-[#FF5A1A] text-body font-semibold text-left mb-[10px] sm:text-left sm:mb-0">
+          <h4 className="text-primary text-body font-semibold text-left mb-[10px] sm:text-left sm:mb-0">
             Company
           </h4>
           <div className="flex flex-col justify-between">
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="bg-secondary px-[30px] sm:px-[70px] py-[8px]">
-        <div className="text-center sm:flex justify-between w-[100%] m-auto py-2 text-gray-600">
+        <div className="text-center sm:flex justify-between w-[100%] m-auto py-2 text-white">
           <p className="text-footnote">
             &copy; {new Date().getFullYear()} Jung Talents. All rights reserved.
           </p>

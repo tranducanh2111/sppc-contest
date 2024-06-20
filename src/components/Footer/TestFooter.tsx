@@ -1,11 +1,11 @@
 import React from 'react'
 // import { useRouter } from 'next/router'
-import Button from './Button'
+import Button from '../Button'
 import RightArrow from '/public/arrowleftactive.svg'
 import LeftArrow from '/public/arrowleftactive.svg'
 import Clock from '/public/Clock.svg'
 import Image from 'next/image'
-import Countdown from './CountDown'
+import Countdown from '../CountDown'
 import SubmitIcon from '/public/submit_icon.svg'
 import SolutionIcon from '/public/solution_icon.svg'
 import ReviewIcon from '/public/review_icon.svg'
@@ -74,16 +74,14 @@ const TestFooter: React.FC = () => {
           <Button
             title="Previous"
             icon={LeftArrow}
-            className="flex items-center"
+            className="flex items-center text-primary"
             classNameIcon="mr-[6px]"
-            textColor="primary"
           />
           <Button
             title="Next"
             icon={RightArrow}
-            className="flex items-center flex-row-reverse"
+            className="flex items-center flex-row-reverse text-primary"
             classNameIcon="mx-[6px]"
-            textColor="primary"
           />
         </div>
         <div className="time bg-[#F9F9F9]">
@@ -93,7 +91,7 @@ const TestFooter: React.FC = () => {
                 <button
                   className={`px-[8px] py-[4px] h-[60px] rounded-md transition duration-300 ease-in-out mx-[4px] border-[1px] ${
                     index == selectedSection
-                      ? 'text-primary border-primary bg-[#FFEDE6]'
+                      ? 'text-primary border-primary bg-primary'
                       : 'border-[#00000073] text-[#00000073]'
                   }`}
                   key={index}
@@ -117,8 +115,9 @@ const TestFooter: React.FC = () => {
                   key={index}
                   title={action.title}
                   icon={action.icon}
-                  className={`flex items-center border-[1px] py-[4px] px-[4px] sm:px-[15px] mx-[4px] rounded-md ${index==activeButton?'border-[#FF6D33] text-white':'border-[#00000073] text-[#00000073]'}`}
-                  bgColor={index == activeButton ? 'primary' : ''}
+                  className={`flex items-center border-[1px] py-[4px] px-[4px] sm:px-[15px] mx-[4px] rounded-md ${
+                    index == activeButton ? 'bg-primary border-[#FF6D33] text-white' : 'border-[#00000073] text-[#00000073]'
+                  }`}
                   classNameIcon="mx-[6px]"
                   onClick={() => setActiveButton(index)}
                 />
