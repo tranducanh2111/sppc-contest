@@ -22,7 +22,7 @@ const PrimaryCard: React.FC<CardProps> = ({ imageURL, name, descriptions, testUR
             <Image src={imageURL} alt={name} className='w-full h-full object-cover rounded-t-[12px]' />
         </figure>
         <article className='flex flex-col items-center px-[16px] sm:space-y-[12px] space-y-[9px]'>
-            <h3 className='text-h3 text-primary font-semibold'>{name}</h3>
+            <h3 className='text-h3 text-primary font-semibold text-center line-clamp-1'>{name}</h3>
             <p className='overflow-y-hidden h-[44px] w-auto leading-[22px] text-grey text-body text-center'>{descriptions}</p>
             <Link href={testURL}>
                 <Button

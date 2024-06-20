@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 import Image, {StaticImageData} from 'next/image';
 import Button from '@/components/Button';
 import PrimaryCard from '@/components/PrimaryCard';
@@ -23,9 +22,9 @@ const ContestOverview = () => {
     return (
         <section className='max-w-[1170px] mx-auto mt-[80px] flex flex-col gap-[3rem]'>
             {/* Header */}
-            <div className='block lg:grid lg:grid-cols-3 gap-x-[3rem] px-5'>
+            <div className='block lg:grid lg:grid-cols-3 gap-x-[72px] px-5'>
                 {/* Header Heading */}
-                <div className='col-span-1 mb-[0.75rem] lg:mb-0'>
+                <div className='col-span-1 mb-[0.75rem] lg:mb-0 flex flex-col justify-center gap-y-[0.75rem]'>
                     <p className='text-body text-primary font-semibold'>With SPPC</p>
                     <h3 className='text-h3'>Fostering talent, creativity, and collaboration in programming  contests.</h3>
                 </div>
@@ -47,16 +46,16 @@ const ContestOverview = () => {
                 </div>
             </div>
             {/* Card Container */}
-            <div className="max-w-[1170px] w-full h-[400px] md:h-[420px] overflow-x-auto hide-scrollbar md:px-5">
+            <div className="max-w-[1170px] w-full h-[410px] md:h-[420px] overflow-x-auto hide-scrollbar sm:px-5">
                 <Swiper
                     className="md:w-full"
                     slidesPerView="auto"
-                    loop={true}
                     breakpoints={{
-                        1024: { centeredSlides: false, initialSlide: 1, spaceBetween: 64},
-                        768: { centeredSlides: false, initialSlide: 1, spaceBetween: 24},
-                        0: { centeredSlides: true, initialSlide: 2, spaceBetween: 16 },
+                        1024: { centeredSlides: false, initialSlide: 0, spaceBetween: 64},
+                        768: { centeredSlides: false, initialSlide: 0, spaceBetween: 24},
+                        0: { centeredSlides: true, initialSlide: 1, spaceBetween: 16 },
                     }}
+                    style={{paddingLeft: 6, paddingRight: 6}}
                 >
                     {CardData.map((card, index) => (
                         <SwiperSlide key={index} className="aspect-[341/424] justify-center items-start" style={{ maxWidth: '330px', width: '80vw', display: "flex"}}>
