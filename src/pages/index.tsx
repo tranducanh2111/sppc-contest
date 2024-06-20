@@ -22,9 +22,7 @@ const Home: React.FC = () => {
         </div>
         <SponsorList />
         <ContestOverview />
-        <div className="max-w-[1170px] flex flex-col mx-auto mt-[2rem] mt-20 gap-[80px] px-5">
-          <PastChampion />
-        </div>
+        <PastChampion />
       </div>
     </Fragment>
   )
