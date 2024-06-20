@@ -23,7 +23,7 @@ const imageMap: Record<CardName, StaticImageData> = {
 
 const PastChampion = () => {
     return (
-        <section className='max-w-[1170px] pb-[0.75rem] mx-auto mt-[80px] md:gap-[1.5rem] gap-[2rem] flex flex-col items-center lg:gap-[4rem] lg:grid lg:grid-cols-3'>
+        <section className='max-w-[1170px] pb-[0.75rem] mx-auto mt-[80px] md:gap-[1.5rem] gap-[2rem] flex flex-col items-center lg:grid lg:grid-cols-3'>
             {/* Heading Container */}
             <div className='flex flex-col gap-[1.5rem] md:gap-[2rem] lg:col-span-1 px-5'>
                 <div className='flex flex-col gap-[0.75rem]'>
