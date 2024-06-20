@@ -6,6 +6,7 @@ import ContestStatistic from '@/page-sections/HomePage/ContestStatistic'
 import SponsorList from '@/page-sections/HomePage/SponsorList'
 import ContestOverview from '@/page-sections/HomePage/ContestOverview'
 import PastChampion from '@/page-sections/HomePage/PastChampion'
+import Register from '@/page-sections/HomePage/Register'
 
 const Home: React.FC = () => {
   // const imageList = [Banner, Banner,Banner,Banner]
@@ -23,6 +24,9 @@ const Home: React.FC = () => {
         <SponsorList />
         <ContestOverview />
         <PastChampion />
+        <div className="max-w-[1170px] flex flex-col mx-auto my-20 px-5">
+          <Register />
+        </div>
       </div>
     </Fragment>
   )
