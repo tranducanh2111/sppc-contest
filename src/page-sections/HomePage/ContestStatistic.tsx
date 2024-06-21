@@ -26,6 +26,7 @@ const ContestStatistic = () => {
                         <Image
                             src={StudentIcon}
                             alt="Location Icon"
+                            loading="lazy"
                         />
                         <div className='flex flex-col gap-y-[0.5rem]'>
                             <h4 className='text-h4'>50000</h4>
@@ -37,6 +38,7 @@ const ContestStatistic = () => {
                         <Image
                             src={UniversityIcon}
                             alt="Location Icon"
+                            loading="lazy"
                         />
                         <div className='flex flex-col gap-y-[0.5rem]'>
                             <h4 className='text-h4'>3000</h4>
@@ -48,6 +50,7 @@ const ContestStatistic = () => {
                         <Image
                             src={CountryIcon}
                             alt="Location Icon"
+                            loading="lazy"
                         />
                         <div className='flex flex-col gap-y-[0.5rem]'>
                             <h4 className='text-h4'>111</h4>
@@ -59,6 +62,7 @@ const ContestStatistic = () => {
                         <Image
                             src={CompetitionIcon}
                             alt="Location Icon"
+                            loading="lazy"
                         />
                         <div className='flex flex-col gap-y-[0.5rem]'>
                             <h4 className='text-h4'>400</h4>
@@ -70,6 +74,7 @@ const ContestStatistic = () => {
                     <Image
                         src={ContestStatIllustration}
                         alt="Location Icon"
+                        loading="lazy"
                     />
                 </div>
             </section>

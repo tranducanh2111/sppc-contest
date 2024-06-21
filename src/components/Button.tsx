@@ -8,6 +8,7 @@ interface ButtonProps {
   icon?: StaticImageData
   className?: string
   classNameIcon?: string
+  style?: React.CSSProperties;
   disabled?: boolean
 }
 
@@ -17,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   className,
   classNameIcon,
+  style,
   disabled = false,
 }: ButtonProps) => {
   // Manually concatenate class strings
@@ -30,6 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       aria-label={title}
+      style={style}
     >
       {icon ? (
           <span className='flex items-center justify-center gap-x-[0.5rem]'>

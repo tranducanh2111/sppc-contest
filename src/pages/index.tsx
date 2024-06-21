@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <title>South Pacific Programming Contest</title>
       </Head>
       <div className="homepage relative bg-white">
-        <div className="max-w-[1170px] flex flex-col mx-auto mt-[2rem] mb-20 gap-[80px] px-5">
+        <div className="max-w-[1170px] flex flex-col mx-auto mt-[1rem] mb-20 gap-[80px] px-5">
           <HeroSection imageUrl={HeroIllustraion}/>
           <ContestStatistic/>
         </div>

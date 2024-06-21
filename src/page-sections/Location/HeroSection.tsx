@@ -7,7 +7,7 @@ interface BannerProps {
 
 const HeroSection = ({ imageUrl } : BannerProps) => {
   return (
-    <section className='lg:grid lg:grid-cols-2 flex flex-col gap-[4rem] lg:gap-[2rem]'>
+    <section className='lg:grid lg:grid-cols-2 flex flex-col gap-[1rem] lg:gap-[2rem]'>
         {/* Text Container */}
         <div className='flex flex-col gap-y-[1.5rem] lg:gap-y-[3rem] pl-5 pr-5 lg:pr-0 justify-center'>
             <div className='flex flex-col gap-y-[0.5rem] lg:gap-y-[0.75rem]'>
