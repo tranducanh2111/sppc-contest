@@ -8,9 +8,7 @@ import ContestOverview from '@/page-sections/HomePage/ContestOverview'
 import PastChampion from '@/page-sections/HomePage/PastChampion'
 import Register from '@/page-sections/HomePage/Register'
 
-const Home: React.FC = () => {
-  // const imageList = [Banner, Banner,Banner,Banner]
-  
+const Home: React.FC = () => {  
   return (
     <Fragment>
       <Head>

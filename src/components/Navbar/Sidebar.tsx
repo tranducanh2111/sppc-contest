@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Search from './Search'
 import SideLogo from 'public/Sidebar.svg'
 import RectangleImage from 'public/book.svg'
@@ -63,12 +64,18 @@ const SidebarModal = ({
             onClick={openSidebar}>
             <Image src={SideLogo} alt="Logo" width={20} height={20} />
           </div>
-          <div className="menu_bar mb-[36px]">
-            <Image src={HomeIcon} alt="Logo" width={20} height={20} />
-          </div>
-          <div className="menu_bar">
-            <Image src={RectangleImage} alt="Logo" width={20} height={20} />
-          </div>
+          {/* Redirect to homepage */}
+          <Link href="/">
+            <div className="menu_bar mb-[36px]">
+              <Image src={HomeIcon} alt="Logo" width={20} height={20} />
+            </div>
+          </Link>
+          {/* Redirect to contest rule */}
+          <Link href="/rules">
+            <div className="menu_bar">
+              <Image src={RectangleImage} alt="Logo" width={20} height={20} />
+            </div>
+          </Link>
         </div>
       </div>
     </>
