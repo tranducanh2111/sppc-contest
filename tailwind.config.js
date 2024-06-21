@@ -28,9 +28,9 @@ module.exports = withMT({
       },
       fontSize: {
         h1: [
-          '90px',
+          '88px',
           {
-            lineHeight: '90px',
+            lineHeight: '88px',
             fontWeight: '700',
           },
         ],
