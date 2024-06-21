@@ -31,7 +31,7 @@ const ContestOverview = () => {
                 {/* Main Card */}
                 <div className='col-span-2 md:aspect-[680/195] lg:aspect-[603.4/195] md:flex md:justify-between shadow-lg rounded-[12px]'>
                     <figure className='md:aspect-[338.2/194.8] lg:aspect-[271.2/194.8] h-full'>
-                        <Image src={GroupOfPeopleImage} alt={"Group of People"} className='object-cover h-full rounded-l-[12px] rounded-r-[12px] md:rounded-r-none' />
+                        <Image src={GroupOfPeopleImage} alt={"Group of People"} loading="lazy" className='object-cover h-full rounded-l-[12px] rounded-r-[12px] md:rounded-r-none' />
                     </figure>
                     <article className='flex flex-wrap flex-col items-center my-auto gap-y-[2rem] py-[1.5rem] md:py-0'>
                         <div className='w-[80%] flex flex-col gap-y-[12px]'>

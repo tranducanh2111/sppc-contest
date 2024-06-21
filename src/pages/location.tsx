@@ -1,6 +1,10 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
+// Components
 import HeroSection from '@/page-sections/Location/HeroSection'
+import VenueGeneral from '@/page-sections/Location/VenueGeneral'
+
+// Resources for this location page's components
 import LocationHeroImage from '../../public/location-hero.png'
 
 const Home: React.FC = () => {
@@ -12,8 +16,8 @@ const Home: React.FC = () => {
         </Head>
         <div className="homepage relative bg-white">
             <HeroSection imageUrl={LocationHeroImage}/>
-            <div className="max-w-[1170px] flex flex-col mx-auto mt-[2rem] mb-20 gap-[80px] px-5">
-                
+            <div className="max-w-[1170px] flex flex-col mx-auto mt-[80px] mb-20 gap-[80px] px-5">
+                <VenueGeneral />
             </div>
         </div>
     </Fragment>

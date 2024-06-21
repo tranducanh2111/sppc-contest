@@ -74,7 +74,7 @@ const SponsorList = () => {
             >
                 {sponsors.map((sponsor, index) => (
                     <SwiperSlide key={index} className="justify-center items-center gap-1" style={{ maxWidth: '200px', width: '100%', height: '128px', display: 'flex' }}>
-                        <Image src={sponsor.src} alt={sponsor.alt} width={128} height={128} />
+                        <Image src={sponsor.src} alt={sponsor.alt} width={128} height={128} loading="lazy"/>
                     </SwiperSlide>
                 ))}
             </Swiper>

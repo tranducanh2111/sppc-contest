@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Button from '@/components/Button';
 import ArrowSvg from '../../public/arrow-head.svg';
 
-
 // Define the prop types for the Card component
 type CardProps = {
     imageURL: StaticImageData | string;
@@ -19,7 +18,7 @@ const PrimaryCard: React.FC<CardProps> = ({ imageURL, name, descriptions, testUR
   return (
     <section className="w-[80vw] aspect-[341/381] rounded-[12px] bg-[#FBFDFF] shadow-lg min-w-[241px] max-w-[330px] pb-[24px]">
         <figure className="relative w-[100%] h-[65%] mb-[12px] object-cover rounded-t-[12px]">
-            <Image src={imageURL} alt={name} className='w-full h-full object-cover rounded-t-[12px]' />
+            <Image src={imageURL} alt={name} loading="lazy" className='w-full h-full object-cover rounded-t-[12px]' />
         </figure>
         <article className='flex flex-col items-center px-[16px] sm:space-y-[12px] space-y-[9px]'>
             <h3 className='text-h3 text-primary font-semibold text-center line-clamp-1'>{name}</h3>
