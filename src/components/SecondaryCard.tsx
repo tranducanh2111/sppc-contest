@@ -36,7 +36,7 @@ const SecondaryCard : React.FC<SeconddaryCardProps>= (
                     style={{paddingLeft: 0, paddingRight: 0}}
                     icon={ThinArrow}/>
             </div>
-            <img src={imageURL} alt="Venue Image" className={`rounded-[1rem] w-full h-full object-cover ${imageClass}`}/>
+            <img src={imageURL} alt="Venue Image" loading='lazy' className={`rounded-[1rem] w-full h-full object-cover ${imageClass}`}/>
         </article>
     );
 };
