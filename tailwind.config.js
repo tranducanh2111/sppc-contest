@@ -28,9 +28,9 @@ module.exports = withMT({
       },
       fontSize: {
         h1: [
-          '90px',
+          '88px',
           {
-            lineHeight: '90px',
+            lineHeight: '88px',
             fontWeight: '700',
           },
         ],
@@ -38,21 +38,21 @@ module.exports = withMT({
           '48px',
           {
             lineHeight: '56px',
-            fontWeight: '600',
+            fontWeight: '700',
           },
         ],
         h3: [
           '24px',
           {
             lineHeight: '28px',
-            fontWeight: '500',
+            fontWeight: '600',
           },
         ],
         h4: [
           '20px',
           {
             lineHeight: '28px',
-            fontWeight: '500',
+            fontWeight: '600',
           },
         ],
         'sub-heading': [
@@ -90,14 +90,14 @@ module.exports = withMT({
         "light-grey": "#687076",
         "sub-head": "#2e2e2e80",
         subtitle: "#00000073",
-        grey: "rgba(0, 0, 0, 0.45)",
+        grey: "rgba(0, 0, 0, 0.55)",
       },
       borderRadius: {
         'inner-border-radius': 'calc(10px - 8px)',
       },
       gridTemplateColumns: {
         // Complex site-specific column configuration
-        'homepage-contest-stat': 'minmax(900px, 1fr) auto',
+        'homepage-contest-stat': 'max(40%, 300px) auto',
       }
     },
   },

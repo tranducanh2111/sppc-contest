@@ -1,29 +1,33 @@
-import { useState, useEffect } from 'react';
+// import { useState } from 'react';
 
-// Custom hook to safely use localStorage
-function useLocalStorage(key, initialValue) {
-  // Check if localStorage is available
-  const isLocalStorageAvailable = typeof localStorage !== 'undefined';
+// // Define the types for key and initialValue
+// type KeyType = string;
+// type InitialValueType = any;
 
-  // Get the initial value from localStorage if available, or use the provided initial value
-  const [storedValue, setStoredValue] = useState(() => {
-    if (isLocalStorageAvailable) {
-      const item = localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } else {
-      return initialValue;
-    }
-  });
+// // Custom hook to safely use localStorage
+// function useLocalStorage(key: KeyType, initialValue: InitialValueType): [InitialValueType, (value: InitialValueType) => void] {
+//   // Check if localStorage is available
+//   const isLocalStorageAvailable = typeof localStorage !== 'undefined';
 
-  // Update localStorage when the state changes
-  const setValue = (value) => {
-    setStoredValue(value);
-    if (isLocalStorageAvailable) {
-      localStorage.setItem(key, JSON.stringify(value));
-    }
-  };
+//   // Get the initial value from localStorage if available, or use the provided initial value
+//   const [storedValue, setStoredValue] = useState<InitialValueType>(() => {
+//     if (isLocalStorageAvailable) {
+//       const item = localStorage.getItem(key);
+//       return item ? JSON.parse(item) : initialValue;
+//     } else {
+//       return initialValue;
+//     }
+//   });
 
-  return [storedValue, setValue];
-}
+//   // Update localStorage when the state changes
+//   const setValue = (newValue: InitialValueType) => {
+//     setStoredValue(newValue);
+//     if (isLocalStorageAvailable) {
+//       localStorage.setItem(key, JSON.stringify(newValue));
+//     }
+//   };
 
-export default useLocalStorage;
+//   return [storedValue, setValue];
+// }
+
+// export default useLocalStorage;

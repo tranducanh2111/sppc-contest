@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import { StaticImageData } from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import LocationIcon from '../../../public/location.svg'
 import CalendarIcon from '../../../public/calendar.svg'
 import Button from '@/components/Button'
@@ -14,9 +13,9 @@ const Banner = ({ imageUrl }:BannerProps) => {
     <section className='flex flex-col md:gap-y-0 gap-y-[2rem]'>
       <section className="relative w-full md:grid md:grid-cols-2">
         {/* Main Content Container */}
-        <div className='flex flex-col gap-[1rem]'>
-            <h1 className='lg:text-h1 text-6xl font-bold uppercase'>Let's go! <span className='text-primary'>SPPC</span> is waiting for you</h1>
-            <p className='lg:text-sub-heading text-body'>Join the coding frenzy and showcase your skills at SPPC - where innovation meets competition!</p>
+        <div className='flex flex-col gap-[1rem] justify-center'>
+            <h1 className='xl:text-h1 text-6xl font-bold uppercase'>Let&apos;s go! <span className='text-primary'>SPPC</span> is waiting for you</h1>
+            <p className='lg:text-sub-heading text-grey text-body'>Join the coding frenzy and showcase your skills at SPPC - where innovation meets competition!</p>
         </div>
         <div className="md:block hidden">
             <Image
@@ -36,7 +35,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
               src={LocationIcon}
               alt="Location Icon"
             />
-            <p className='text-body text-grey'>Sydney, NSW, Australia</p>
+            <p className='text-body font-bold'>Sydney, NSW, Australia</p>
           </div>
         </div>
         {/* Line */}
@@ -49,7 +48,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
               src={CalendarIcon}
               alt="Location Icon"
             />
-            <p className='text-body text-grey'>17 July 2024</p>
+            <p className='text-body font-bold'>17 July 2024</p>
           </div>
         </div>
         {/* Button */}

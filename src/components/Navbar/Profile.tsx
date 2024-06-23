@@ -10,7 +10,6 @@ import LogOut from 'public/logout.svg'
 import TestImg from 'public/Test.png'
 import ArticleList from '@/components/Article/ArticleList'
 import { ArticleProps } from '@/components/Article/Article'
-import SkillTestBoxList from '@/components/SkillTestBoxList'
 import bookData from '@/components/SampleData/bookData.json';
 
 // Hide the user email partially
@@ -85,19 +84,17 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
                 <Image
                     alt={user.name || "avatar"}
                     src={user.picture}
-                    objectFit="cover"
                     width={130}
                     height={130}
-                    className="rounded-full border-[#FF5A1A] border-opacity-40"
+                    className="rounded-full border-[#FF5A1A] border-opacity-40 object-cover"
                 />
                 :
                 <Image
-                alt={"No User's Avatar"}
-                src={"/default_avatar.jpg"}
-                objectFit="cover"
-                width={130}
-                height={130}
-                className="rounded-full border-[#FF5A1A] border-opacity-40"
+                    alt={"No User's Avatar"}
+                    src={"/default_avatar.jpg"}
+                    width={130}
+                    height={130}
+                    className="rounded-full border-[#FF5A1A] border-opacity-40 object-cover"
                 />
             }
             <Link href={"#"} className='text-body text-[#FF5A1A]'>
@@ -133,13 +130,6 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
             </div>
 
             <div className='bg-[#FFFFFF] py-[12px] px-[24px] rounded-[8px] space-y-[40px]'>
-            <h2 className='text-[30px] font-[500] leading-[32px]'>Recent test result</h2>
-                {bookData.books[0].units[0].practice_tests.slice(0,2).map((test:any, index:number) => (
-                    <SkillTestBoxList key={index} testData={test} />
-                ))}
-            </div>
-
-            <div className='bg-[#FFFFFF] py-[12px] px-[24px] rounded-[8px] space-y-[40px]'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-[30px] font-[500] leading-[32px]'>Recent test</h2>
                 <Link href={"#"} className="flex items-center max-w-content h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto">
@@ -154,10 +144,9 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
                         <Image
                         alt={"book image"}
                         src={"/default_avatar.jpg"}
-                        objectFit="cover"
                         width={70}
                         height={70}
-                        className='rounded-[8px]'
+                        className='rounded-[8px] object-cover'
                         />
                     </figure>
                     <div>

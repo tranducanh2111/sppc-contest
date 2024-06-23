@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "heading": "Venue Entrance",
+        "paragraph": "The main entrance to the Convention Centre can be found at the northern end of ICC Sydney, closest to Cockle Bay (Darling Harbour) and Sofitel Sydney Darling Harbour. The closest drop off and taxi zone address is Iron Wharf Place. The closest light rail stop is Convention stop, and the closest train station is Town Hall.",
+        "imageURL": "/venue-image-1.png"
+    },
+    {
+        "id": 2,
+        "heading": "Reception Desk",
+        "paragraph": "The main entrance is located on Tumbalong Boulevard, across from the Chinese Garden of Friendship. General Admission entrance, VIP and Box Office are located on Moriarty Walk. The closest train station is Central Station and the light rail stop Exhibition is located right next to ICC Sydney Theatre. The drop-off and taxi zone destination is Zollner Circuit.",
+        "imageURL": "/venue-image-2.png"
+    },
+    {
+        "id": 3,
+        "heading": "Staying in Sydney",
+        "paragraph": "Australia's most cosmopolitan city, Sydney is a global commercial and cultural destination. Boasting 700+ direct international flights, 85 museums, 65 cinemas and 140 art galleries, Sydney offers much more than stunning beaches, great food and wine, and the world's finest harbour. Situated in the city's epicentre, ICC Sydney is within walking distance of multiple transport links, more than 42,000 hotel rooms, and the city's new financial services district at Barangaroo.",
+        "imageURL": "/venue-image-3.png"
+    },
+    {
+        "id": 4,
+        "heading": "Staying in Sydney",
+        "paragraph": "Sydney is a picture-perfect postcard when the sun's out and the harbour's glimmering. But when you wake up your culinary senses, the city truly comes alive. Our in-house catering team have the skills and local know-how to get the most of what's on offer. And the best bit is, once you're done, you're in the perfect spot to start exploring. Pair freshly caught seafood with a bottle from one of New South Wales' 14 distinct wine regions.",
+        "imageURL": "/venue-image-4.png"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "year": "2023",
+        "champion": "University of Sydney",
+        "testURL": "",
+        "buttonText": "See their story"
+    },
+    {
+        "year": "2022",
+        "champion": "University of Melbourne",
+        "testURL": "",
+        "buttonText": "See their story"
+    },
+    {
+        "year": "2021",
+        "champion": "Swinburne University",
+        "testURL": "",
+        "buttonText": "See their story"
+    },
+    {
+        "year": "2020",
+        "champion": "Monash University",
+        "testURL": "",
+        "buttonText": "See their story"
+    },
+    {
+        "year": "2019",
+        "champion": "University of Sydney",
+        "testURL": "",
+        "buttonText": "See their story"
+    }
+]

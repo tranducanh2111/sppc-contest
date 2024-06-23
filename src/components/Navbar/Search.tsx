@@ -37,10 +37,10 @@ const Search: React.FC = () => {
 
   return (
     <div
-      className={`py-[1px] pl-[16px] flex border-[2px] justify-left items-center flex-1 rounded-md ${
+      className={`py-[1px] pl-[8px] md:pl-[16px] flex border-[2px] justify-left items-center flex-1 rounded-md ${
         isInputFocused ? 'border-primary' : 'border-[#B6B6B6]'
       }`}>
-      <div className="icon mr-[16px]">
+      <div className="icon mr-[8px] md:mr-[16px]">
         <Image
           src={isInputFocused || search ? IconFocus : IconBlur}
           alt="Logo"
@@ -50,7 +50,7 @@ const Search: React.FC = () => {
       </div>
       <input
         className="w-[100%] h-[34px] border-0 outline-none"
-        placeholder="Search Input"
+        placeholder="What are you looking for?"
         value={search}
         onChange={e => setSearch(e.target.value)}
         onKeyUp={handleSearchSubmit}

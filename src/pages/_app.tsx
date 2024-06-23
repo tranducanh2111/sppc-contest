@@ -1,9 +1,9 @@
 import React from "react";
 import { Auth0Provider } from '@auth0/auth0-react';
 import { AppProps } from "next/app";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer/Footer";
-import TestFooter from "@/components/TestFooter";
+// import TestFooter from "@/components/Footer/TestFooter";
 import Navbar from "@/components/Navbar/Navbar";
 import Layout from "@/components/Layout";
 import "../styles/globals.css";
@@ -13,7 +13,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  const pathName = usePathname();
+  // const pathName = usePathname();
   const AUTH0_DOMAIN: string = process.env.NEXT_PUBLIC_AUTH0_DOMAIN
     ? process.env.NEXT_PUBLIC_AUTH0_DOMAIN
     : "";
@@ -32,9 +32,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     setIsOpen(false)
   }
 
-  const openProfile = () => {
-    setProfileIsOpen(true)
-  }
+  // const openProfile = () => {
+  //   setProfileIsOpen(true)
+  // }
 
   const closeProfile = () => {
     setProfileIsOpen(false)
@@ -63,7 +63,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </Layout>
       <div className={`${isProfileOpen && 'lg:block hidden'}`}>
-        {pathName?.split('/')[1] === 'test' ? <TestFooter /> : <Footer/>}
+        {/* {pathName?.split('/')[1] === 'test' ? <TestFooter /> : <Footer/>} */}
+        <Footer />
       </div>
     </Auth0Provider>
   );
