@@ -15,7 +15,6 @@ const ContestStatistic = () => {
                 headingText="About SPPC"
                 paragraphText='The South Pacific Programming Contests annually unite coding enthusiasts. Participants register, submit solutions, and compete in challenges ranging from beginner to advanced. The website serves as a central hub for contest details, celebrating winners and volunteers. Sponsored by organizations, the contests promote talent and collaboration in programming.'
                 viewMoreLink=''
-                showFilterBar={false}
             />
             {/* Body */}
             <section className='flex flex-col lg:grid lg:grid-cols-homepage-contest-stat gap-[2rem]'>

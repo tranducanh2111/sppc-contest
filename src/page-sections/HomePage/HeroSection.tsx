@@ -14,7 +14,7 @@ const Banner = ({ imageUrl }:BannerProps) => {
       <section className="relative w-full md:grid md:grid-cols-2">
         {/* Main Content Container */}
         <div className='flex flex-col gap-[1rem] justify-center'>
-            <h1 className='xl:text-h1 text-6xl font-bold uppercase'>Let's go! <span className='text-primary'>SPPC</span> is waiting for you</h1>
+            <h1 className='xl:text-h1 text-6xl font-bold uppercase'>Let&apos;s go! <span className='text-primary'>SPPC</span> is waiting for you</h1>
             <p className='lg:text-sub-heading text-grey text-body'>Join the coding frenzy and showcase your skills at SPPC - where innovation meets competition!</p>
         </div>
         <div className="md:block hidden">

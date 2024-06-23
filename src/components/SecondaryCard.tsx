@@ -1,5 +1,4 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
 import Button from '@/components/Button';
 import ThinArrow from '../../public/thin-arrow.svg';
 
