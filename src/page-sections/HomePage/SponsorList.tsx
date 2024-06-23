@@ -20,7 +20,12 @@ import SalesforceLogo from '../../../public/salesforce.svg';
 import AdobeLogo from '../../../public/adobe.svg';
 import CapgeminiLogo from '../../../public/capgemini.svg';
 import EnvatoLogo from '../../../public/envato.svg';
-import HeadingSection from '@/components/SectionHeader';
+import MicrosoftLogo from '../../../public/microsoft.svg';
+import AlphabetLogo from '../../../public/alphabet.svg';
+import NetflixLogo from '../../../public/netflix.svg';
+import SonyLogo from '../../../public/sony.svg';
+import NvidiaLogo from '../../../public/nvidia.svg';
+
 import ThinArrow from '../../../public/thin-arrow.svg';
 
 const SponsorList = () => {
@@ -40,6 +45,11 @@ const SponsorList = () => {
         { src: CapgeminiLogo, alt: "Capgemini" },
         { src: EnvatoLogo, alt: "Envato" },
         { src: AWSLogo, alt: "AWS" },
+        { src: MicrosoftLogo, alt: "Microsoft" },
+        { src: AlphabetLogo, alt: "Alphabet" },
+        { src: NetflixLogo, alt: "Netflix" },
+        { src: SonyLogo, alt: "Sony" },
+        { src: NvidiaLogo, alt: "Nvidia" },
     ];
 
     return (
