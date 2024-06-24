@@ -2,10 +2,10 @@ import React from "react";
 import { Auth0Provider } from '@auth0/auth0-react';
 import { AppProps } from "next/app";
 // import { usePathname } from "next/navigation";
-import Footer from "@/components/Footer/Footer";
 // import TestFooter from "@/components/Footer/TestFooter";
 import Navbar from "@/components/Navbar/Navbar";
 import Layout from "@/components/Layout";
+import Footer from "@/components/Footer/Footer";
 import "../styles/globals.css";
 import 'swiper/css'
 import 'swiper/css/navigation'
