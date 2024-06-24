@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <SponsorList />
         <ContestOverview />
         <PastChampion />
-        <div className="max-w-[1170px] flex flex-col mx-auto my-20 px-5">
+        <div className="max-w-[1170px] flex flex-col mx-auto mt-20 px-5">
           <Register />
         </div>
       </div>
