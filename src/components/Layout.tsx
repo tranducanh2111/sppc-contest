@@ -17,18 +17,16 @@ const Layout: React.FC<{
     <div>{children}</div>
   ) : (
     <>
-      <div className="flex justify-start overflow-x-hidden">
+      <main className="flex justify-start overflow-x-hidden">
         {/* Sidebar */}
-        <div>
-          <SidebarModal
-            isOpen={isOpen}
-            openSidebar={openSidebar}
-            closeSidebar={closeSidebar}
-          />
-        </div>
+        <SidebarModal
+          isOpen={isOpen}
+          openSidebar={openSidebar}
+          closeSidebar={closeSidebar}
+        />
 
         {/* Content */}
-        <div className="relative flex-1 min-h-[1472px] sm:min-h-[1504px] overflow-x-hidden">
+        <div className="relative flex-1 min-h-[1472px] sm:min-h-[1504px] overflow-x-hidden border-l-4">
           <Profile
             isProfileOpen={isProfileOpen}
             closeProfile={closeProfile}
@@ -37,7 +35,7 @@ const Layout: React.FC<{
             {children}
           </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }

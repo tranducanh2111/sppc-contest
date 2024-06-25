@@ -33,7 +33,7 @@ const Navbar: React.FC<{openSidebar: () => void, toggleProfile : () => void}> = 
               <Search />
             </div>
             <div className="flex justify-center items-center">
-              {isAuthenticated ? (
+              {!isAuthenticated ? (
                 <button type='button' className="profile_image" onClick={toggleProfile}>
                   {user?.picture ?
                     <Image
