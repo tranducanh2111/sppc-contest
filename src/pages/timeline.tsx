@@ -17,7 +17,7 @@ const CardData = [
   {
     "name": "Location",
     "descriptions": "Step into our modern convention center, the perfect venue for thrilling competitions!",
-    "testURL": "/timeline",
+    "testURL": "/location",
     "image": LocationImage
   },
   {
@@ -35,9 +35,9 @@ const Location: React.FC = () => {
   return (
     <Fragment>
         <Head>
-            <title>SPPC Location</title>
+            <title>SPPC Timeline</title>
         </Head>
-        <div className="homepage relative bg-white">
+        <div className="timeline relative bg-white">
             <HeroSection imageUrl={LocationHeroImage}/>
             <div className="max-w-[1170px] flex flex-col mx-auto mt-[80px] mb-20 gap-[80px] px-5">
                 <Timeline />
