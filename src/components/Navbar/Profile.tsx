@@ -78,7 +78,7 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
             onClick={closeProfile}>
         </div>
 
-        <div className={isProfileOpen ? 'absolute right-0 w-full sm:w-[517px] bg-[#ECECEC] px-[20px] py-[40px] sm:px-[30px] space-y-[40px] z-20 sm:rounded-[12px]' : 'hidden'}>
+        <div className={isProfileOpen ? 'absolute right-0 w-full sm:w-[517px] bg-[#ECECEC] px-[20px] py-[40px] sm:px-[30px] space-y-[40px] z-[1010] sm:rounded-[12px]' : 'hidden'}>
             <div className='flex flex-col items-center bg-[#FFFFFF] w-full h-[184px] rounded-[8px] py-[12px] gap-[8px]'>
             {user?.picture ?
                 <Image
