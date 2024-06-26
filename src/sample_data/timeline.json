@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Check-in",
+      "time": "10:00",
+      "note": "All contestants are required to be at the venue for registration.",
+      "image": "/timeline-1.png"
+    },
+    {
+      "title": "Practice Contest",
+      "time": "11:00 - 11:30",
+      "note": "All team members must be present to practice during this time.",
+      "image": "/timeline-2.png"
+    },
+    {
+      "title": "Break",
+      "time": "11:30 - 12:00",
+      "note": "Contestants must leave computers on standby until the break ends.",
+      "image": "/timeline-3.png"
+    },
+    {
+      "title": "Preliminary Contest",
+      "time": "12:00 - 17:00",
+      "note": "Scored based on 5 hours of work.",
+      "image": "/timeline-4.png"
+    },
+    {
+      "title": "Presentation",
+      "time": "18:00 - 19:00",
+      "note": "All teams should get ready by 17:30.",
+      "image": "/timeline-5.png"
+    }
+]  
