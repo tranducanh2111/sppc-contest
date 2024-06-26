@@ -28,37 +28,33 @@ const SidebarModal = ({
       </div>
 
       {/* Extended sidebar */}
-      <div
-        className={`sm:relative fixed inset-y-0 right-0 sm:left-0 top-21 z-50 sm:z-0 bg-white mr-0 ${
-          isOpen ? 'w-[260px]' : 'w-[70px] invisible sm:visible duration-0'
-        } duration-100`}>
-        <div
-          className={`px-4 justify-between flex items-center w-full mb-[35px] ${
-            !isOpen && 'hidden'
-          }`}>   
-          <div className="hidden sm:block">
-            <h2 className="text-xl font-semibold ">Dashboard</h2>
+      <div className={`sm:relative fixed inset-y-0 right-0 sm:left-0 top-0 z-50 sm:z-0 bg-white mr-0 ${isOpen ? 'w-[260px]' : 'w-[70px] invisible sm:visible duration-0'} duration-100`}>
+          <div className='fixed'>
+            <div className={`px-4 justify-between flex items-center w-full mb-[24px] ${!isOpen && 'hidden'}`}>   
+              <div className="hidden sm:block">
+                <h2 className="text-xl font-semibold ">Dashboard</h2>
+              </div>
+              <button
+                className="pl-[94px] hidden sm:block"
+                onClick={closeSidebar}>
+                <Image src={SideLogo} alt="Logo" width={20} height={20} />
+              </button>
+            </div>
+            <div className={`fixed ${!isOpen && 'hidden'} pl-2 pr-2 pt-2 md:p-0`}>
+              <div className='md:hidden block'>
+                <Search />
+              </div>
+              <Menu />
+            </div>
           </div>
-          <button
-            className="pl-[70px] hidden sm:block"
-            onClick={closeSidebar}>
-            <Image src={SideLogo} alt="Logo" width={20} height={20} />
-          </button>
-        </div>
-        <div className={`${!isOpen && 'hidden'} pl-2 pr-2 pt-6 md:p-0`}>
-          <div className='md:hidden block'>
-            <Search />
-          </div>
-          <Menu />
-        </div>
       </div>
 
       {/* Small sidebar */}
       <div
-        className={`bg-[#EEEEEE] hidden sm:block w-[70px] absolute z-50 sm:z-0 top-21 ${
+        className={`bg-[#EEEEEE] hidden sm:block w-[70px] fixed z-50 sm:z-0 top-21 ${
           isOpen ? 'invisible' : 'visible'
         } duration-50`}>
-        <div className="p-[8px] flex flex-col justify-items-stretch justify-start bg-white h-screen items-center">
+        <div className="p-[8px] flex flex-col justify-items-stretch justify-start bg-white items-center">
           <div
             className="menu_bar mb-[50px] cursor-pointer"
             onClick={openSidebar}>
