@@ -35,13 +35,13 @@ const SidebarModal = ({
                 <h2 className="text-xl font-semibold ">Dashboard</h2>
               </div>
               <button
-                className="pl-[94px] hidden sm:block"
+                className="pl-[104px] hidden sm:block"
                 onClick={closeSidebar}>
                 <Image src={SideLogo} alt="Logo" width={20} height={20} />
               </button>
             </div>
-            <div className={`fixed ${!isOpen && 'hidden'} pl-2 pr-2 pt-2 md:p-0`}>
-              <div className='md:hidden block'>
+            <div className={`fixed ${!isOpen && 'hidden'} px-4 pt-2`}>
+              <div className='w-[230px] md:hidden block'>
                 <Search />
               </div>
               <Menu />

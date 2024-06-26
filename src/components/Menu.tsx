@@ -31,8 +31,8 @@ const Menu = () => {
   }
 
   return (
-    <div className="w-full mt-2">
-      <button className={`mb-[16px] hover:text-primary focus:outline-none flex items-center w-full text-left py-2 px-4 justify-between`} >
+    <div className="w-[232px] mt-2">
+      <button className={`mb-[16px] hover:text-primary focus:outline-none flex items-center w-full text-left py-2 justify-between`} >
         <Link href="/">
           <div className="flex">
             <Image src={HomeIcon} alt="Home" width={20} height={20} />
@@ -43,7 +43,7 @@ const Menu = () => {
       <button
         className={`text-${
           subMenuOpen ? 'primary' : 'black'
-        } hover:text-primary focus:outline-none flex items-center w-full text-left py-2 px-4 justify-between`}
+        } hover:text-primary focus:outline-none flex items-center w-full text-left py-2 justify-between`}
         onClick={toggleSubMenu}>
         <div className="flex">
           <Image src={BookLib} alt="Logo" width={20} height={20} />
