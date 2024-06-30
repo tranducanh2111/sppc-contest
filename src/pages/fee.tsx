@@ -7,6 +7,7 @@ import ContactCard from '@/components/ContactCard'
 // Resources for this location page's components
 import LocationHeroImage from '../../public/location-hero.png'
 import EventDetail from '@/components/EventDetail'
+import PricingList from '@/page-sections/Fee/PricingList'
 
 // Resources for EventDetail Component
 import LocationImage from '../../public/venue-general-1.png'
@@ -39,6 +40,7 @@ const Location: React.FC = () => {
         <div className="homepage relative bg-white">
             <HeroSection imageUrl={LocationHeroImage}/>
             <div className="max-w-[1170px] flex flex-col mx-auto mt-[80px] mb-20 gap-[80px] px-5">
+                <PricingList />
                 <ContactCard />
             </div>
             <EventDetail cardData={CardData}/>
