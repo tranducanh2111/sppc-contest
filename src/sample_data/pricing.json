@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Registration Fee",
+        "price": 50,
+        "forWho": "All participants",
+        "note": "Mandatory",
+        "description": "Basic entry fee for the contest.",
+        "highlight": true,
+        "priceCategory": "included"
+    },
+    {
+        "name": "Team Registration Fee",
+        "price": 120,
+        "forWho": "Teams",
+        "note": "Optional",
+        "description": "Fee for registering a team of up to 3 members.",
+        "highlight": true,
+        "priceCategory": "included"
+    },
+    {
+        "name": "Workshop Fee",
+        "price": 30,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee to attend pre-contest workshops.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Practice Contest Fee",
+        "price": 20,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee to participate in a practice contest.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Accommodation Fee",
+        "price": 100,
+        "forWho": "Non-local participants",
+        "note": "Optional",
+        "description": "Fee for on-site accommodation during the contest.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Meal Plan Fee",
+        "price": 50,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for meals during the contest.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Transportation Fee",
+        "price": 40,
+        "forWho": "Non-local participants",
+        "note": "Optional",
+        "description": "Fee for transportation to and from the venue.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Certificate Fee",
+        "price": 10,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for an official participation certificate.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Networking Event Fee",
+        "price": 25,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for attending the networking event.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Contest Material Fee",
+        "price": 10,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for printed contest materials.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Additional Monitor Fee",
+        "price": 30,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for an additional monitor during the contest.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    },
+    {
+        "name": "Guidance Session Fee",
+        "price": 35,
+        "forWho": "All participants",
+        "note": "Optional",
+        "description": "Fee for one-on-one guidance sessions.",
+        "highlight": false,
+        "priceCategory": "excluded"
+    }
+]
