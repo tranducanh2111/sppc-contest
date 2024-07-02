@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
         },
         {
           name: 'Contact Us',
-          link: '/terms-of-service',
+          link: '/contact',
         },
       ]
 
