@@ -5,12 +5,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Button from '../Button'
 import ThinArrow from "public/thin-arrow.svg"
-import ArrowRight from 'public/arrow-right.svg'
+// import ArrowRight from 'public/arrow-right.svg'
 import LogOut from 'public/logout.svg'
 import TestImg from 'public/Test.png'
 import ArticleList from '@/components/Article/ArticleList'
 import { ArticleProps } from '@/components/Article/Article'
-import bookData from '@/components/SampleData/bookData.json';
+// import bookData from '@/components/SampleData/bookData.json';
 
 // Hide the user email partially
 const formatEmail = (email : string) => {
