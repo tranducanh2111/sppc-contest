@@ -3,11 +3,9 @@ import Head from 'next/head'
 // Components
 
 
-// Resources for this location page's components
-
-
-// Resources for EventDetail Component
-
+// Resources
+import HeroImage from 'public/about-hero.png'
+import HeroSection from '@/page-sections/About/HeroSection'
 
 const AboutUs: React.FC = () => {
 
@@ -16,9 +14,9 @@ const AboutUs: React.FC = () => {
         <Head>
             <title>About SPPC</title>
         </Head>
-        <div className="homepage relative bg-white">
-            <div className="max-w-[1170px] flex flex-col mx-auto mt-[80px] mb-20 gap-[80px] px-5">
-            
+        <div className="about relative bg-white">
+            <div className="max-w-[1170px] flex flex-col mx-auto mb-20 gap-[80px] px-5">
+              <HeroSection imageUrl={HeroImage} />
             </div>
         </div>
     </Fragment>

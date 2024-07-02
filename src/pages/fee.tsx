@@ -37,7 +37,7 @@ const Location: React.FC = () => {
         <Head>
             <title>SPPC Location</title>
         </Head>
-        <div className="homepage relative bg-white">
+        <div className="fee relative bg-white">
             <HeroSection imageUrl={LocationHeroImage}/>
             <div className="max-w-[1170px] flex flex-col mx-auto mt-[80px] mb-20 gap-[80px] px-5">
                 <PricingList />
