@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
 // Components
-
+import HeroSection from '@/page-sections/About/HeroSection'
+import KeyStatistic from '@/page-sections/About/KeyStatistic'
 
 // Resources
 import HeroImage from 'public/about-hero.png'
-import HeroSection from '@/page-sections/About/HeroSection'
 
 const AboutUs: React.FC = () => {
 
@@ -17,6 +17,7 @@ const AboutUs: React.FC = () => {
         <div className="about relative bg-white">
             <div className="max-w-[1170px] flex flex-col mx-auto mb-20 gap-[80px] px-5">
               <HeroSection imageUrl={HeroImage} />
+              <KeyStatistic />
             </div>
         </div>
     </Fragment>
