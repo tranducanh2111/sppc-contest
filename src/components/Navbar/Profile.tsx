@@ -5,12 +5,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Button from '../Button'
 import ThinArrow from "public/thin-arrow.svg"
-import ArrowRight from 'public/arrow-right.svg'
+// import ArrowRight from 'public/arrow-right.svg'
 import LogOut from 'public/logout.svg'
 import TestImg from 'public/Test.png'
 import ArticleList from '@/components/Article/ArticleList'
 import { ArticleProps } from '@/components/Article/Article'
-import bookData from '@/components/SampleData/bookData.json';
+// import bookData from '@/components/SampleData/bookData.json';
 
 // Hide the user email partially
 const formatEmail = (email : string) => {
@@ -97,7 +97,7 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
                     className="rounded-full border-[#FF5A1A] border-opacity-40 object-cover"
                 />
             }
-            <Link href={"#"} className='text-body text-[#FF5A1A]'>
+            <Link href={"#"} className='text-body text-primary'>
                 Change Avatar
             </Link>
             </div>
@@ -129,45 +129,45 @@ const NavBarProfile: React.FC<{isProfileOpen : boolean, closeProfile: () => void
             </div>
             </div>
 
-            <div className='bg-[#FFFFFF] py-[12px] px-[24px] rounded-[8px] space-y-[40px]'>
-            <div className='flex justify-between items-center'>
-                <h2 className='text-[30px] font-[500] leading-[32px]'>Recent test</h2>
-                <Link href={"#"} className="flex items-center max-w-content h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto">
-                    <Button className='font-medium' icon={ThinArrow} title='View more'/>
-                </Link>
-            </div>
-            <div className='overflow-x-auto hide-scrollbar'>
-                <div className='w-[633px] grid grid-cols-3 gap-[24px]'>
-                {bookData.books.slice(0,3).map((book, index:number) => (
-                    <div key={index} className='flex justify-between space-x-[16px]'>
-                    <figure className='h-[70px] w-[70px] rounded-[8px]'>
-                        <Image
-                        alt={"book image"}
-                        src={"/default_avatar.jpg"}
-                        width={70}
-                        height={70}
-                        className='rounded-[8px] object-cover'
-                        />
-                    </figure>
-                    <div>
-                        <h5 className='text-h5 line-clamp-2'>{book.book_name}</h5>
-                        <Link href={`/book/${book.bookURL}`}>
-                        <button className='flex items-center justify-center space-x-[10px] py-[4px]'>
-                            <span className='max-w-content text-body text-[#FF5A1A] font-bold'>Continue test</span>
-                            <Image
-                            src={ArrowRight}
-                            alt="Logo"
-                            width={14}
-                            height={14}
-                            />
-                        </button>
-                        </Link>
-                    </div>
-                    </div>
-                ))}
-                </div>
-            </div>
-            </div>
+            {/* <div className='bg-[#FFFFFF] py-[12px] px-[24px] rounded-[8px] space-y-[40px]'>
+              <div className='flex justify-between items-center'>
+                  <h2 className='text-[30px] font-[500] leading-[32px]'>Recent test</h2>
+                  <Link href={"#"} className="flex items-center max-w-content h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto">
+                      <Button className='font-medium' icon={ThinArrow} title='View more'/>
+                  </Link>
+              </div>
+              <div className='overflow-x-auto hide-scrollbar'>
+                  <div className='w-[633px] grid grid-cols-3 gap-[24px]'>
+                  {bookData.books.slice(0,3).map((book, index:number) => (
+                      <div key={index} className='flex justify-between space-x-[16px]'>
+                      <figure className='h-[70px] w-[70px] rounded-[8px]'>
+                          <Image
+                          alt={"book image"}
+                          src={"/default_avatar.jpg"}
+                          width={70}
+                          height={70}
+                          className='rounded-[8px] object-cover'
+                          />
+                      </figure>
+                      <div>
+                          <h5 className='text-h5 line-clamp-2'>{book.book_name}</h5>
+                          <Link href={`/book/${book.bookURL}`}>
+                          <button className='flex items-center justify-center space-x-[10px] py-[4px]'>
+                              <span className='max-w-content text-body text-[#FF5A1A] font-bold'>Continue test</span>
+                              <Image
+                              src={ArrowRight}
+                              alt="Logo"
+                              width={14}
+                              height={14}
+                              />
+                          </button>
+                          </Link>
+                      </div>
+                      </div>
+                  ))}
+                  </div>
+              </div>
+            </div> */}
 
             <Button title='Log out' icon={LogOut} className='bg-primary w-full text-white text-h5 justify-center' onClick={handleLogout}/>
         </div>
