@@ -4,12 +4,12 @@ import Image from 'next/image'
 import ArrowRight from 'public/arrow-right.svg'
 
 export interface ArticleProps {
-  imgSrc: StaticImageData
+  imgSrc: StaticImageData | string
   description: string
   url: string
 }
 
-const Article: React.FC<ArticleProps> = ({ imgSrc, description, url }) => {
+const Blog: React.FC<ArticleProps> = ({ imgSrc, description, url }) => {
   const handleClick = () => {
     console.log(url) // eslint-disable-line no-console
     //handle to redirect to url
@@ -27,7 +27,7 @@ const Article: React.FC<ArticleProps> = ({ imgSrc, description, url }) => {
         />
       </div>
       <div>
-        <p className="font-bold  lg:max-w-[250px] h-[72px] line-clamp-3 overflow-hidden ">{description}</p>
+        <p className="font-bold lg:max-w-[250px] h-[72px] line-clamp-3 overflow-hidden ">{description}</p>
         <button
           className="flex items-center my-[8px] text-body font-bold text-primary gap-2 pl-0"
           onClick={handleClick}>
@@ -39,4 +39,4 @@ const Article: React.FC<ArticleProps> = ({ imgSrc, description, url }) => {
   )
 }
 
-export default Article
+export default Blog
