@@ -7,6 +7,7 @@ import HistoryTimeline from '@/page-sections/About/HistoryTimeline'
 
 // Resources
 import HeroImage from 'public/about-hero.png'
+import Mission from '@/page-sections/About/Mission'
 
 const AboutUs: React.FC = () => {
 
@@ -20,6 +21,7 @@ const AboutUs: React.FC = () => {
               <HeroSection imageUrl={HeroImage} />
               <KeyStatistic />
               <HistoryTimeline />
+              <Mission />
             </div>
         </div>
     </Fragment>
