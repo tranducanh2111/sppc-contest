@@ -1,0 +1,32 @@
+[
+    {
+      "img": "/duc_anh.jpg",
+      "recColor": "bg-[#E76F51]",
+      "name": "Aaron Tran",
+      "position": "Software Developer",
+      "description": [
+        "Co-founded the contest to inspire the next generation of programmers and increase diversity in STEM fields.",
+        "Previously worked as a software engineer at a leading tech company."
+      ]
+    },
+    {
+      "img": "/selene-pham.jpg",
+      "recColor": "bg-[#2A9D8F]",
+      "name": "Selene Pham",
+      "position": "Pitching Coach",
+      "description": [
+        "Former research scientist at MIT, specializing in artificial intelligence.",
+        "Co-authored several research papers on machine learning and robotics before co-founding the contest to democratize access to coding education."
+      ]
+    },
+    {
+      "img": "/justin-young.jpg",
+      "recColor": "bg-[#E9C46A]",
+      "name": "Justin Young",
+      "position": "Technical Coach",
+      "description": [
+        "Co-founded the contest to create a platform for students to showcase their coding skills and connect with like-minded individuals globally.",
+        "Entrepreneur with successful ventures in the tech industry."
+      ]
+    }
+]  
