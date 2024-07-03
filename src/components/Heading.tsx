@@ -21,7 +21,7 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <div className={`flex flex-col items-start ${className}`}>
       <h2 className={`text-left ${titleClassName}`}>{title}</h2>
-      <p className={`text-left text-body ${descriptionClassName}`} dangerouslySetInnerHTML={{__html:description}}>
+      <p className={`text-left text-body  ${descriptionClassName}`} dangerouslySetInnerHTML={{__html:description}}>
         {/* {description} */}
       </p>
     </div>
