@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 import React from 'react'
 import Image from 'next/image'
-import Heading from './Heading'
+import Heading from '@/components/Heading'
 import Button from './Button'
 import IconTakeTest from 'public/arrow-right.svg'
 import Link from 'next/link'

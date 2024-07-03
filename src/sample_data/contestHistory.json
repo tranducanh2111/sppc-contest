@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Inception: The Birth of an Idea",
+        "time": "2010",
+        "description": "In 2010, some passionate programmers had a big idea. They wanted to make a fun challenge for students to learn coding and get excited about it. So, they started planning a contest to do just that.",
+        "image": "/history-2010.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Grow: Getting More People Involved",
+        "time": "2015",
+        "description": "By 2015, the contest had gained popularity, attracting more participants and sponsors. The increased involvement led to a broader range of challenges, enhancing the learning experience for everyone.",
+        "image": "/history-2015.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Change: Make Things Better",
+        "time": "2020",
+        "description": "In 2020, the contest underwent significant improvements, incorporating new technologies and innovative challenges. This transformation ensured the event remained engaging and relevant in an evolving digital landscape.",
+        "image": "/history-2020.jpg"
+    }
+]

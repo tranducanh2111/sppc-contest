@@ -3,6 +3,7 @@ import Head from 'next/head'
 // Components
 import HeroSection from '@/page-sections/About/HeroSection'
 import KeyStatistic from '@/page-sections/About/KeyStatistic'
+import HistoryTimeline from '@/page-sections/About/HistoryTimeline'
 
 // Resources
 import HeroImage from 'public/about-hero.png'
@@ -18,6 +19,7 @@ const AboutUs: React.FC = () => {
             <div className="max-w-[1170px] flex flex-col mx-auto mb-20 gap-[80px] px-5">
               <HeroSection imageUrl={HeroImage} />
               <KeyStatistic />
+              <HistoryTimeline />
             </div>
         </div>
     </Fragment>
