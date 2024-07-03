@@ -4,6 +4,7 @@ import Head from 'next/head'
 import HeroSection from '@/page-sections/About/HeroSection'
 import KeyStatistic from '@/page-sections/About/KeyStatistic'
 import HistoryTimeline from '@/page-sections/About/HistoryTimeline'
+import Blog from '@/page-sections/About/BlogSection'
 
 // Resources
 import HeroImage from 'public/about-hero.png'
@@ -24,6 +25,7 @@ const AboutUs: React.FC = () => {
               <HistoryTimeline />
               <Mission />
               <Team />
+              <Blog />
             </div>
         </div>
     </Fragment>
