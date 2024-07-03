@@ -8,6 +8,7 @@ import HistoryTimeline from '@/page-sections/About/HistoryTimeline'
 // Resources
 import HeroImage from 'public/about-hero.png'
 import Mission from '@/page-sections/About/Mission'
+import Team from '@/page-sections/About/Team'
 
 const AboutUs: React.FC = () => {
 
@@ -22,6 +23,7 @@ const AboutUs: React.FC = () => {
               <KeyStatistic />
               <HistoryTimeline />
               <Mission />
+              <Team />
             </div>
         </div>
     </Fragment>
