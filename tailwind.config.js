@@ -67,6 +67,7 @@ module.exports = withMT({
           {
             lineHeight: '24px',
             fontWeight: '400',
+            letterSpacing: '0.02em',
           },
         ],
         footnote: [
@@ -74,6 +75,7 @@ module.exports = withMT({
           {
             lineHeight: '20px',
             fontWeight: '400',
+            letterSpacing: '0.02em',
           },
         ],
         button: [
