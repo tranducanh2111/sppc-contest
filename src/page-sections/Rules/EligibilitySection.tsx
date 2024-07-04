@@ -23,10 +23,9 @@ const EligibilitySection: React.FC = () => {
 
         <div className='mx-5 sm:mx-0'>
             <Swiper
-                className="justify-start items-start gap-6 inline-flex bottom-[200px] h-[180px]"
+                className="justify-start items-start gap-6 inline-flex bottom-[200px] h-[200px]"
                 spaceBetween={24}
                 slidesPerView="auto"
-                pagination={{ clickable: true }}
             >
             {items.map((item, index) => (
                 <SwiperSlide
