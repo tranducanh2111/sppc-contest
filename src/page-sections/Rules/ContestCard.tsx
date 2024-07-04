@@ -11,7 +11,7 @@ const ContestCard = () => {
             </figure>
             <article className='col-span-3 flex flex-wrap flex-col items-center my-auto gap-y-[2rem] py-[1.5rem] lg:py-0'>
                 <div className='w-[80%] flex flex-col gap-y-[12px]'>
-                    <h3 className='text-h3 text-center'>Let's explore your talent!</h3>
+                    <h3 className='text-h3 text-center'>Let&apos;s explore your talent!</h3>
                     <p className='text-body text-center'>Take the first step towards coding greatness and sign up now!</p>
                 </div>
                 <div className='flex flex-wrap gap-x-[3rem]'>
