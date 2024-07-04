@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "Problem Materials & Resources",
+        "details": [
+            {
+            "heading": "Problem Set Distribution",
+            "description": "Site coordinators will provide one copy of the problem set per team member, in addition to the PDF and sample data on the contest server."
+            },
+            {
+            "heading": "Paper Reference Material",
+            "description": "Teams may use any amount of paper reference material. This includes books and printed notes."
+            },
+            {
+            "heading": "Pen and Paper",
+            "description": "Teams may use pens and paper for developing and discussing solutions among themselves."
+            },
+            {
+            "heading": "Printing Code",
+            "description": "Teams may print code from their computer. Site coordinators should make a best effort to ensure this is supported."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Equipment Usage",
+        "details": [
+            {
+            "heading": "Single Computer",
+            "description": "Teams must use only one computer, one keyboard, and one monitor."
+            },
+            {
+            "heading": "Provided Devices",
+            "description": "Teams competing at a live site must use only the devices provided and cannot bring their own."
+            },
+            {
+            "heading": "Remote Teams",
+            "description": "The only exception is for unofficial teams competing remotely, who should use their own devices and arrange an informal system to claim and unclaim use of the keyboard."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Internet & Software",
+        "details": [
+            {
+            "heading": "Problem Set Distribution",
+            "description": "Site coordinators will provide one copy of the problem set per team member, in addition to the PDF and sample data on the contest server."
+            },
+            {
+            "heading": "Paper Reference Material",
+            "description": "Teams may use any amount of paper reference material. This includes books and printed notes."
+            },
+            {
+            "heading": "Pen and Paper",
+            "description": "Teams may use pens and paper for developing and discussing solutions among themselves."
+            },
+            {
+            "heading": "Printing Code",
+            "description": "Teams may print code from their computer. Site coordinators should make a best effort to ensure this is supported."
+            }
+        ]
+    }
+]
