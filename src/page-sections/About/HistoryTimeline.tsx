@@ -22,7 +22,7 @@ const HistoryTimeline: React.FC = () => {
                 <p className='text-body'>The contest started in 2010 with a simple idea: to create a fun challenge for students to learn coding. Over the years, it grew in popularity, attracting participants from around the world by 2015. To ensure inclusivity, organizers made it easier for students from diverse backgrounds to join. In 2020, the contest evolved further, incorporating new technologies like artificial intelligence and blockchain to keep participants engaged and learning. Throughout its journey, the contest has remained committed to inspiring and empowering student programmers worldwide.</p>
             </div>
 
-            <div className="flrx flex-col space-y-10 ">
+            <div className="flex flex-col space-y-10 ">
             {teamMembers.map((member, index) => (
                 <MemberCard
                     id={member.id}
