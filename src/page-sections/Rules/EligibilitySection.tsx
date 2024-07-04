@@ -5,7 +5,7 @@ import { items } from '@/components/Testimonials/TestimonialItems'
 
 const EligibilitySection: React.FC = () => {
   return (
-    <div className="relative max-w-screen overflow-hidden h-[422px]">
+    <section className="relative max-w-screen overflow-hidden h-[422px]">
         <div className="w-full h-[290px] bg-primary absolute " />
 
         <div className="max-w-[1160px] h-[302px] flex flex-col mx-auto mt-[60px] mb-10 px-5">
@@ -38,7 +38,7 @@ const EligibilitySection: React.FC = () => {
             ))}
             </Swiper>
         </div>
-    </div>
+    </section>
   )
 }
 
