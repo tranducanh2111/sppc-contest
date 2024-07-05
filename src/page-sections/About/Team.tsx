@@ -23,7 +23,6 @@ const Team = () => {
                     <PeopleCard
                         key={index}
                         img={person.img}
-                        recColor={person.recColor}
                         name={person.name}
                         position={person.position}
                         description={person.description}

@@ -1,7 +1,6 @@
 [
     {
       "img": "/duc_anh.jpg",
-      "recColor": "bg-[#E76F51]",
       "name": "Aaron Tran",
       "position": "Software Developer",
       "description": [
@@ -11,7 +10,6 @@
     },
     {
       "img": "/selene-pham.jpg",
-      "recColor": "bg-[#2A9D8F]",
       "name": "Selene Pham",
       "position": "Pitching Coach",
       "description": [
@@ -21,7 +19,6 @@
     },
     {
       "img": "/justin-young.jpg",
-      "recColor": "bg-[#E9C46A]",
       "name": "Justin Young",
       "position": "Technical Coach",
       "description": [
