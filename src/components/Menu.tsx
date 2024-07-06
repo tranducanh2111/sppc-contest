@@ -40,6 +40,7 @@ const Menu = () => {
   ];
   
   const resourceMenu = [
+    { name: 'All Resources', isHovered: false, page: 'resources'},
     { name: 'News', isHovered: false, page: 'news'},
     { name: 'Programming Tips', isHovered: false, page: 'programTip'},
     { name: 'Tutorial', isHovered: false, page: 'tutorial'},
