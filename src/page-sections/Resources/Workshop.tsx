@@ -55,7 +55,7 @@ const Workshop = () => {
 	}, []);
 
 	return (
-		<main className="h-[390px] md:h-[594px] max-w-[1160px] w-full flex flex-col items-center justify-center mx-auto px-[20px] md:px-0 md:py-[32px] space-y-5">
+		<main className="h-[390px] md:h-[594px] max-w-[1160px] w-full flex flex-col items-center justify-center mx-auto md:py-[32px] space-y-5">
             {/* Heading */}
             <section className='space-y-[4px] w-full max-w-[518px]'>
                 <h2 className="text-h3 md:text-h2 text-center">SPPC Workshop</h2>
