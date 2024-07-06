@@ -2,6 +2,8 @@ import React, { Fragment } from 'react'
 import Head from 'next/head'
 // Components
 import BannerSection from '@/page-sections/Resources/BannerSection'
+import Workshop from '@/page-sections/Resources/Workshop'
+
 // Resource
 import Banner1 from 'public/banner-1.jpg'
 import Banner3 from 'public/banner-3.jpg'
@@ -19,8 +21,8 @@ const ResourcesPage: React.FC = () => {
             </Head>
             <div className="rules relative bg-white">
                 <BannerSection imageList={imageList}/>
-                <div className="max-w-[1170px] flex flex-col mx-auto mt-[1rem] md:mt-[2rem] mb-20 gap-[80px] px-5">
-
+                <div className="max-w-[1170px] flex flex-col mx-auto mt-20 mb-20 gap-[80px] px-5">
+                    <Workshop />
                 </div>
             </div>
         </Fragment>
