@@ -23,7 +23,7 @@ const categories = [
   { href: '/rules', src: ContestIcon, alt: 'Contest Rules' },
   { href: '/about', src: PeopleIcon, alt: 'About Us' },
   { href: '/sponsor', src: SponsorIcon, alt: 'Sponsors' },
-  { href: '/tutorial', src: ResourceIcon, alt: 'Resources' },
+  { href: '/resources', src: ResourceIcon, alt: 'Resources' },
   { href: '/contact', src: ContactIcon, alt: 'Contact Us' },
   { href: '/blog', src: BlogIcon, alt: 'Blog' },
 ];

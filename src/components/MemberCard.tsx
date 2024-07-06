@@ -36,9 +36,9 @@ const MemberCard = ({
                 variant="circular"
                 alt={name}
                 src={image}
-                className="border-2 border-white"
+                className="md:block hidden border-2 border-white"
             />
-            <div className={`w-[70%] ${isHidden && 'text-white'} self-center `}>
+            <div className={`md:w-[70%] w-[87%] ${isHidden && 'text-white'} self-center `}>
                 <div>
                     <p className={`text-h3 mb-[0.25rem] ${!isHidden ? 'text-black' : 'text-white'}`}>{name}</p>
                     <p className={`text-body ${!isHidden ? 'text-light-grey' : 'text-white'}`}>{time}</p>
