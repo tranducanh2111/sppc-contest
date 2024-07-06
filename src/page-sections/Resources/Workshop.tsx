@@ -59,7 +59,7 @@ const Workshop = () => {
             {/* Heading */}
             <section className='space-y-[4px] w-full max-w-[518px]'>
                 <h2 className="text-h3 md:text-h2 text-center">SPPC Workshop</h2>
-                <p className="text-grey text-center text-sm leading-6">
+                <p className="text-grey text-center text-body">
                     Don&apos;t miss this exciting opportunity — register now for our workshop and take your coding skills to the next level!
                 </p>
             </section>
