@@ -20,7 +20,7 @@ type CardProps = {
 
 const PricingCard: React.FC<CardProps> = ({ cardName, price, forWho, note, description, highlight }) => {
   return (
-    <article className={`flex flex-col gap-[1rem] p-[2.5rem] rounded-[16px] shadow-lg ${highlight ? 'bg-primary' : 'bg-white'}`}>
+    <article className={`flex flex-col gap-[1rem] md:p-[2.5rem] p-[1.25rem] rounded-[16px] shadow-lg ${highlight ? 'bg-primary' : 'bg-white'}`}>
         <h4 className={`text-h4 ${highlight ? 'text-white' : 'text-primary'}`}>{cardName}</h4>
         {/* Fee */}
         <div className='flex gap-[0.5rem] items-center'>

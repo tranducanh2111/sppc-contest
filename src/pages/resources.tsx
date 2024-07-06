@@ -4,14 +4,13 @@ import Head from 'next/head'
 import BannerSection from '@/page-sections/Resources/BannerSection'
 // Resource
 import Banner1 from 'public/banner-1.jpg'
-import Banner2 from 'public/banner-2.jpg'
 import Banner3 from 'public/banner-3.jpg'
 import Banner4 from 'public/banner-4.jpg'
 import Banner5 from 'public/banner-5.jpg'
 import Banner6 from 'public/banner-6.jpg'
 
 const ResourcesPage: React.FC = () => {
-    const imageList = [Banner1, Banner2, Banner3, Banner4, Banner5, Banner6]
+    const imageList = [Banner1, Banner3, Banner4, Banner5, Banner6]
 
     return (
         <Fragment>

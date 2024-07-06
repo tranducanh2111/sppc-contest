@@ -16,8 +16,8 @@ interface RuleCardProps
 
 const RuleCard: React.FC<RuleCardProps> = ({ ruleNumber, title, details }) => {
   return (
-    <div className="relative flex flex-col lg:items-center lg:grid lg:grid-cols-3 bg-gray-100 gap-[1.5rem] py-[2rem] px-[4rem] rounded-[16px] shadow-lg mb-[0.75rem]">
-        <p className="absolute -top-[84px] left-[50px] text-[96px] font-bold text-gray-200">
+    <div className="relative flex flex-col lg:items-center lg:grid lg:grid-cols-3 bg-gray-100 gap-[1.5rem] py-[2rem] px-[1.5rem] md:px-[4rem] rounded-[16px] shadow-lg mb-[0.75rem]">
+        <p className="absolute left-[22px] md:left-[50px] md:-top-[84px] md:text-[96px] -top-[42px] text-[48px] font-bold text-gray-200">
             RULE {ruleNumber}
         </p>
         <h2 className="text-h2 text-primary lg:col-span-1">{title}</h2>

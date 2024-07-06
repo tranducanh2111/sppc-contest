@@ -10,12 +10,12 @@ interface SwiperProps {
 const NavigateButton = ({imageList,isHover}:{imageList:any,isHover: number}) => {
     const swiper = Slide.useSwiper()
     return (
-        <div className="absolute bottom-0 left-[20%] sm:left-[50%] sm:translate-x-[-50%] z-[99] text-red">
+        <div className="absolute bottom-0 left-[50%] translate-x-[-50%] z-[99] text-red">
         {imageList.map((img: any,index:number) => (
             <div
             onClick={() => swiper.slideTo(index)}
             key={index}
-            className={`w-[48px] h-[6px] px-[24px] py-[3px] ${
+            className={`w-[28px] sm:w-[48px] h-[6px] px-[10px] sm:px-[24px] py-[3px] ${
                 isHover == index ? 'bg-[#FFFFFF]' : 'bg-grey opacity-[0.5]'
             } rounded-[2px] inline-block mx-1`}></div>
         ))}

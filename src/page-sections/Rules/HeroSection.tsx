@@ -10,8 +10,8 @@ const HeroSection: React.FC = () => {
     return (
         <section className='flex flex-col lg:grid lg:grid-cols-2 gap-y-[1.5rem] gap-x-[2rem]'>
             <div className='flex flex-col flex-wrap gap-[1rem]'>
-                <h2 className='text-h2'><span className='text-primary'>2024</span> SPPC</h2>
-                <h1 className='text-h1 uppercase'>Contest Rule</h1>
+                <h2 className='md:text-h2 text-3xl font-semibold'><span className='text-primary'>2024</span> SPPC</h2>
+                <h1 className='md:text-h1 text-5xl font-bold uppercase'>Contest Rule</h1>
                 <div className='hidden lg:grid grid-cols-3 gap-[1.5rem] mt-[2rem]'>
                     <Image src={SubImage1} alt='Sub Image 1' className='object-cover rounded-[16px]'/>
                     <Image src={SubImage2} alt='Sub Image 2' className='object-cover rounded-[16px]'/>

@@ -26,7 +26,7 @@ const Layout: React.FC<{
         />
 
         {/* Content */}
-        <div className="relative flex-1 min-h-[1472px] sm:min-h-[1504px] overflow-x-hidden border-l-4">
+        <div className="relative flex-1 min-h-[1472px] sm:min-h-[1504px] overflow-x-hidden sm:border-l-4">
           <Profile
             isProfileOpen={isProfileOpen}
             closeProfile={closeProfile}

@@ -13,7 +13,7 @@ const EligibilitySection: React.FC = () => {
                 <div className="w-full">
                     <div className="w-full sm:w-[405px] h-[86px] flex flex-col items-start gap-[4px] inline-flex ">
                     <h2 className="text-[#FFFFFF] text-h2">Eligibility</h2>
-                    <p className="text-[#FFFFFF] text-body tracking-[0.32px]">
+                    <p className="w-full text-[#FFFFFF] text-body tracking-[0.32px]">
                         Official teams must only have three students from the same institution. Most notably, each student must:
                     </p>
                     </div>
