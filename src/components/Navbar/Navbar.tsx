@@ -48,10 +48,9 @@ const Navbar: React.FC<{openSidebar: () => void, toggleProfile : () => void}> = 
                     <Image
                       alt={"No User's Avatar"}
                       src={"/default_avatar.jpg"}
-                      objectFit="cover"
                       width={46}
                       height={46}
-                      className="rounded-full sm:hover:border-[6px] border-primary border-opacity-40"
+                      className="rounded-full sm:hover:border-[6px] border-primary border-opacity-40 object-cover"
                     />
                   }
                 </button>
