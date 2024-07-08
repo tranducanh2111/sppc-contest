@@ -102,6 +102,7 @@ module.exports = withMT({
         'homepage-contest-stat': 'max(40%, 300px) auto',
         'auto-fit': 'repeat(auto-fit, minmax(310px, 1fr))',
         'about-mission': 'auto 560px',
+        'tab': '46px auto 46px',
       }
     },
   },
