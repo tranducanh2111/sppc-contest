@@ -35,7 +35,7 @@ const ContestOverview = () => {
                     </figure>
                     <article className='flex flex-wrap flex-col items-center my-auto gap-y-[2rem] py-[1.5rem] md:py-0'>
                         <div className='w-[80%] flex flex-col gap-y-[12px]'>
-                            <h4 className='text-h4 text-center'>Let’s  explore your talent!</h4>
+                            <h4 className='text-h4 text-center'>Let&apos;s  explore your talent!</h4>
                             <p className='text-body text-center'>Take the first step towards coding greatness and sign up now!</p>
                         </div>
                         <div className='flex flex-wrap gap-x-[3rem]'>

@@ -15,6 +15,7 @@ const Team = () => {
                     headingText={'Meet Our Team!'}
                     paragraphText={"Discover the awesome people behind our mission - they're the ones making magic happen!"}
                     viewMoreLink={'/'}
+                    showFilterBar={false}
                 />
             </div>
 

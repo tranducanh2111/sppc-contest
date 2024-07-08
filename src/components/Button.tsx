@@ -34,19 +34,28 @@ const Button: React.FC<ButtonProps> = ({
       aria-label={title}
       style={style}
     >
-      {icon ? (
-          <span className='flex items-center justify-center gap-x-[0.5rem]'>
-            <Image
-              src={icon}
-              alt="Logo"
-              width={14}
-              height={14}
-              className={classNameIcon}
-            />
-            <span className='max-w-content text-body'>{title}</span>
-          </span>
-      )
-      :(
+      {icon && !title ? (
+        <span className='flex items-center justify-center'>
+          <Image
+            src={icon}
+            alt="Logo"
+            width={14}
+            height={14}
+            className={classNameIcon}
+          />
+        </span>
+      ) : icon && title ? (
+        <span className='flex items-center justify-center gap-x-[0.5rem]'>
+          <Image
+            src={icon}
+            alt="Logo"
+            width={14}
+            height={14}
+            className={classNameIcon}
+          />
+          <span className='max-w-content text-body'>{title}</span>
+        </span>
+      ) : (
         title
       )}
     </button>
