@@ -50,7 +50,7 @@ const ResourceSection = ({sectionName, description, viewMoreLink, showFilter} : 
 
 	return (
     <section className='w-full'>
-		<div className="flex flex-col justify-center p-[20px] lg:p-0">
+		<div className="flex flex-col justify-center lg:p-0">
             {/* Heading Section */}
             <HeadingSection
                 categories={categories}
