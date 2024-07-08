@@ -54,10 +54,10 @@ const SectionHeader = ({
     setSelectedCategoryIndex,
 }: HeadingSectionProps) => {
     return (
-        <div className="mb-[24px] w-full flex flex-col sm:flex-row justify-between items-center space-y-[12px] sm:space-y-0">
-            <div className='w-full sm:max-w-[532px] space-y-[12px]'>
+        <div className="mb-[24px] w-full flex flex-col flex-wrap md:flex-row justify-between items-center space-y-[12px]">
+            <div className='w-full sm:max-w-[512px] space-y-[12px]'>
                 <h2 className="text-h2 mb-[4px] max-w-[418px] font-bold">{headingText}</h2>
-                <p className="text-body text-grey line-[22px] max-w-[532px]">
+                <p className="text-body text-grey line-[22px] max-w-[512px]">
                     {paragraphText}
                 </p>
                 {/* Conditionally render FilterBar */}
@@ -71,7 +71,7 @@ const SectionHeader = ({
             </div>
             {/* View More button */}
             <a href={viewMoreLink} className="flex items-center max-w-content h-[30px] text-primary px-1 py-[4px] rounded-[2px] ml-auto hover:scale-[1.1] transition duration-200 ease-in-out">
-                <Button className='font-medium text-primary' icon={ThinArrow} title='View more'/>
+                <Button className='text-primary' icon={ThinArrow} title='View more'/>
             </a>
         </div>
     );
