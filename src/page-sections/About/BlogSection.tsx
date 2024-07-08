@@ -14,6 +14,7 @@ const BlogSection: React.FC = () => {
                 headingText='Blog'
                 paragraphText='Discover the latest insights, tips, and stories on our blog—your go-to destination for inspiration and knowledge in technology.'
                 viewMoreLink='/'
+                showFilterBar={false}
             />
             <div className="w-[90%] mx-auto sm:w-[100%] block">
                 <Swiper
