@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image'
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Image from 'next/image'
 
 interface ButtonProps {
@@ -12,7 +12,7 @@ interface ButtonProps {
   disabled?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   title,
   onClick,
   icon,
@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   classNameIcon,
   style,
   disabled = false,
-}: ButtonProps) => {
+}, ref) => {
   // Manually concatenate class strings
   const buttonClasses = `flex items-center justify-center text-body px-[9px] sm:px-[15px] py-[8px] h-[36px] rounded-md transition duration-300 ease-in-out ${
     className || ''
@@ -33,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       aria-label={title}
       style={style}
+      ref={ref}
     >
       {icon && !title ? (
         <span className='flex items-center justify-center'>
@@ -60,6 +61,8 @@ const Button: React.FC<ButtonProps> = ({
       )}
     </button>
   )
-}
+})
+
+Button.displayName = 'Button'
 
 export default Button
