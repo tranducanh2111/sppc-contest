@@ -56,7 +56,7 @@ const NavBarProfile: React.FC<{
       <div
         className={
           isProfileOpen
-            ? "absolute right-0 w-full sm:w-[517px] bg-[#ECECEC] px-[20px] py-[40px] sm:px-[30px] space-y-[40px] z-[1010] sm:rounded-[12px]"
+            ? "absolute right-0 w-full sm:w-[517px] bg-[#ECECEC] px-[20px] py-[40px] sm:px-[30px] space-y-[40px] z-[1000] sm:rounded-[12px]"
             : "hidden"
         }
       >
