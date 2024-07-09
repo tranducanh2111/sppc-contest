@@ -31,10 +31,10 @@ const categories = [
 const SidebarModal = ({ isOpen, closeSidebar, openSidebar }: SidebarModalProps) => {
   return (
     <>
-      <div className={`fixed inset-0 z-50 sm:z-0 ${isOpen ? 'block bg-black opacity-50 sm:opacity-0' : 'hidden'}`} onClick={closeSidebar}></div>
+      <div className={`fixed inset-0 z-[1009] sm:z-0 ${isOpen ? 'block bg-black opacity-50 sm:opacity-0' : 'hidden'}`} onClick={closeSidebar}></div>
 
       {/* Extended sidebar */}
-      <div className={`sm:relative fixed inset-y-0 right-0 sm:left-0 top-0 z-50 sm:z-0 bg-white mr-0 ${isOpen ? 'w-[260px]' : 'w-[70px] invisible sm:visible duration-0'} duration-100`}>
+      <div className={`sm:relative fixed inset-y-0 right-0 sm:left-0 top-0 z-[1010] sm:z-0 bg-white mr-0 ${isOpen ? 'w-[260px]' : 'w-[70px] invisible sm:visible duration-0'} duration-100`}>
         <div className='fixed'>
           <div className={`px-4 justify-between flex items-center w-full mb-[24px] ${!isOpen && 'hidden'}`}>
             <div className="hidden sm:block">

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
-import HeroIllustraion from '../../public/hero-image.svg'
+import HeroIllustraion from 'public/hero-image.svg'
 import HeroSection from '@/page-sections/HomePage/HeroSection'
 import ContestStatistic from '@/page-sections/HomePage/ContestStatistic'
 import SponsorList from '@/page-sections/HomePage/SponsorList'
